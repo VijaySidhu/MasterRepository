@@ -16,7 +16,7 @@ public class App {
 		customerDAO.insert(customer);   
 
 		Customer customer1 = customerDAO.findByCustomerId(1);
-		System.out.println("Trying Commit");
+		System.out.println("Trying Commit  ");
 		System.out.println(customer1);
 
 	}
