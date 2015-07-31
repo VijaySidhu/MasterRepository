@@ -1,0 +1,73 @@
+2015-07-31 12:28:38,285 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.service.dependencyfinder:DependencyFinder:1.0-SNAPSHOT @ C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder\pom.xml.
+2015-07-31 12:28:38,659 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.service.dependencyfinder:DependencyFinder:1.0-SNAPSHOT @ C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\pom.xml.
+2015-07-31 12:28:39,136 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MySqlConnectionTester/src/main/java
+2015-07-31 12:28:39,136 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MySqlConnectionTester/src/main/resources
+2015-07-31 12:28:39,137 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MySqlConnectionTester/src/test/java
+2015-07-31 12:28:39,284 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 2 project(s) in 1 sec
+2015-07-31 12:28:40,324 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:28:40,328 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-31 12:28:40,329 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:28:40,330 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder\src\test\resources
+2015-07-31 12:28:41,119 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:28:41,120 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2015-07-31 12:28:41,127 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:28:41,128 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\src\test\resources
+2015-07-31 12:29:21,912 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:29:21,916 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-31 12:29:21,917 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:29:21,917 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder\src\test\resources
+2015-07-31 12:29:41,646 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-07-31 12:29:42,094 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.service.dependencyfinder:DependencyFinder:1.0-SNAPSHOT @ C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder\pom.xml.
+2015-07-31 12:29:42,395 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.service.dependencyfinder:DependencyFinder:1.0-SNAPSHOT @ C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\pom.xml.
+2015-07-31 12:29:42,701 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DependencyFinder/src/main/java
+2015-07-31 12:29:42,701 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DependencyFinder/src/main/resources
+2015-07-31 12:29:42,701 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DependencyFinder/src/test/java
+2015-07-31 12:29:42,803 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MySqlConnectionTester/src/main/java
+2015-07-31 12:29:42,803 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MySqlConnectionTester/src/main/resources
+2015-07-31 12:29:42,803 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MySqlConnectionTester/src/test/java
+2015-07-31 12:29:43,023 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2015-07-31 12:29:43,992 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:29:43,993 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-31 12:29:43,994 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:29:43,994 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder\src\test\resources
+2015-07-31 12:29:44,523 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:29:44,524 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2015-07-31 12:29:44,532 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:29:44,533 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\src\test\resources
+2015-07-31 12:30:07,640 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder
+2015-07-31 12:30:07,640 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2015-07-31 12:30:08,902 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:30:08,904 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-31 12:30:08,905 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:30:08,906 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder\src\test\resources
+2015-07-31 12:30:15,475 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester
+2015-07-31 12:30:15,476 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2015-07-31 12:30:16,715 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:30:16,718 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2015-07-31 12:30:16,729 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:30:16,729 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\src\test\resources
+2015-07-31 12:30:23,605 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder
+2015-07-31 12:30:23,605 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2015-07-31 12:30:28,100 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:30:28,108 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-31 12:30:28,111 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:30:28,113 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder\src\test\resources
+2015-07-31 12:30:34,864 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester
+2015-07-31 12:30:34,865 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2015-07-31 12:30:39,263 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:30:39,264 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2015-07-31 12:30:39,265 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:30:39,266 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\src\test\resources
+2015-07-31 12:31:14,595 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.service.dependencyfinder:DependencyFinder:1.0-SNAPSHOT @ C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\pom.xml.
+2015-07-31 12:31:16,056 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:31:16,057 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2015-07-31 12:31:16,058 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:31:16,059 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\src\test\resources
+2015-07-31 12:31:34,263 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:31:34,263 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-31 12:31:34,265 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:31:34,265 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\DependencyFinder\src\test\resources
+2015-07-31 12:31:34,277 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:31:34,277 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-07-31 12:31:34,278 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-07-31 12:31:34,278 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-sts-3.7.release\MasterRepository\MySqlConnectionTester\src\test\resources
