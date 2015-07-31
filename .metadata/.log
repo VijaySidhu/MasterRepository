@@ -159,3 +159,95 @@ Contains: The project description file (.project) for 'RemoteSystemsTempFiles' i
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 12:42:27.636
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 2 2 2015-07-31 12:47:21.488
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-07-31 12:47:21.488
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:00:32.993
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:00:32.995
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:00:40.430
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:00:40.431
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:02:26.314
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:02:26.316
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-07-31 13:02:54.525
+!MESSAGE Exception caught during execution of add command
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:211)
+	at org.eclipse.egit.core.op.CommitOperation.addUntracked(CommitOperation.java:222)
+	at org.eclipse.egit.core.op.CommitOperation.access$4(CommitOperation.java:210)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:206)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:302)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:187)
+	... 7 more
+
+!ENTRY org.eclipse.equinox.security 1 0 2015-07-31 13:04:11.884
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.egit.core 4 0 2015-07-31 13:04:52.757
+!MESSAGE An exception occurred during push on URI https://github.com/VijaySidhu/MasterRepository.git: https://github.com/VijaySidhu/MasterRepository.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/VijaySidhu/MasterRepository.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:164)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:228)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/VijaySidhu/MasterRepository.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:498)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:387)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1200)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:157)
+	... 4 more
+
+!ENTRY org.eclipse.egit.core 4 0 2015-07-31 13:05:23.714
+!MESSAGE An exception occurred during push on URI https://github.com/VijaySidhu/MasterRepository.git: https://github.com/VijaySidhu/MasterRepository.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/VijaySidhu/MasterRepository.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:164)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:228)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/VijaySidhu/MasterRepository.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:498)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:387)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1200)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:157)
+	... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:06:35.854
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:06:35.855
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:08:44.133
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-07-31 13:08:44.135
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
