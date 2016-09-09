@@ -1,0 +1,27 @@
+package com.google.interview.questions.string;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class SentenceCreation {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static boolean sentenceCreation(String text, String pattern) {
+		List<String> listTextWords = Arrays.asList(text.split(" "));
+		List<String> listPatternWords = Arrays.asList(pattern.split(" "));
+
+		for (String textWord : listTextWords) {
+
+		}
+		
+		for (String patternWord : listPatternWords) {
+
+		}
+
+		return false;
+	}
+
+}

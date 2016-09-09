@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.google.interview.questions.GraphPathFinder&apos; to &apos;GraphPathFinderBetweenTwoNodes&apos;&#x0D;&#x0A;- Original project: &apos;questions&apos;&#x0D;&#x0A;- Original element: &apos;com.google.interview.questions.GraphPathFinder&apos;&#x0D;&#x0A;- Renamed element: &apos;com.google.interview.questions.GraphPathFinderBetweenTwoNodes&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GraphPathFinder&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.google.interview.questions{GraphPathFinder.java[GraphPathFinder" matchStrategy="1" name="GraphPathFinderBetweenTwoNodes" qualified="false" references="true" similarDeclarations="false" stamp="1466986407627" textual="false" version="1.0"/>
+</session>

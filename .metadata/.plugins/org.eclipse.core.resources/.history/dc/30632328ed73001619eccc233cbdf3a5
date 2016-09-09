@@ -1,0 +1,9 @@
+package com.google.interview.questions.arrays;
+
+public class HourGlassSum {
+	
+	public static void main(String[] args) {
+		 int arr[][] = new int[6][6];
+	}
+
+}

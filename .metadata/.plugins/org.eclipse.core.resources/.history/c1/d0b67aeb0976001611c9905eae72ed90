@@ -1,0 +1,14 @@
+package com.google.interview.questions.linkedlist;
+
+class NodeDel {
+	int data;
+	NodeDel next;
+
+	public NodeDel(int data) {
+		this.data = data;
+	}
+}
+
+public class DeleteNode {
+
+}

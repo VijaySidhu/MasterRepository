@@ -1,0 +1,15 @@
+package com.google.interview.questions.linkedlist;
+
+class NodeAtTail {
+	int data;
+	NodeAtTail next;
+
+	public NodeAtTail(int data) {
+		this.data = data;
+	}
+
+}
+
+public class InsertNodeAtTail {
+
+}

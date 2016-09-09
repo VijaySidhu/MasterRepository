@@ -1,0 +1,17 @@
+1472968822353	Rename type 'Transpose'
+1472969028207	Rename type 'DoubleDimArray'
+1472969225156	Rename type 'PairSum'
+1472969241466	Rename type 'PairSumHashMap'
+1472969263136	Rename type 'PairSumArrayQuickSort'
+1472969292702	Rename type 'ArraySumUsingSet'
+1473105254723	Move compilation unit
+1473129872778	Delete element
+1473129895043	Move compilation unit
+1473131468115	Rename local variable 'index'
+1473369347496	Rename local variable 'newNode'
+1473393357159	Move compilation unit
+1473393393460	Move compilation unit
+1473393459649	Move compilation unit
+1473393480536	Move compilation units
+1473395731209	Rename type 'OperationsOnBinSearchTree'
+1473396904804	Move compilation unit

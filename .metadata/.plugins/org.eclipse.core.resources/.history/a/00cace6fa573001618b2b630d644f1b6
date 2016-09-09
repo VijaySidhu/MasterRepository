@@ -1,0 +1,55 @@
+package com.google.interview.questions.algorithms;
+
+import java.util.Stack;
+
+public class DepthFirstTraversal {
+
+	static void dfsTravesal(Node root) {
+		Stack<Node> stack = new Stack<>();
+		stack.push(root);
+		while (stack.isEmpty()) {
+			Node child = stack.pop();
+			if (null != child.getLeft()) {
+				stack.push(child.getLeft());
+
+			}
+			if (null != child.getRight()) {
+				stack.push(child).getRight();
+			}
+			System.out.print(" " + child.getData());
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Node root = new Node(1);
+		Node rootLeft = new Node(2);
+		Node rootRight = new Node(3);
+		root.left = rootLeft;
+		root.right = rootRight;
+	}
+
+}
+
+class Node {
+
+	int data;
+	Node left;
+	Node right;
+
+	public Node(int data) {
+		this.data = data;
+	}
+
+	public int getData() {
+		return data;
+	}
+
+	public Node getLeft() {
+		return left;
+	}
+
+	public Node getRight() {
+		return right;
+	}
+}

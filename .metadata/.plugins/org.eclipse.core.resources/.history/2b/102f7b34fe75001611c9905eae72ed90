@@ -1,0 +1,26 @@
+package com.google.interview.questions.linkedlist;
+
+class NodeElement {
+	int data;
+	NodeElement next;
+
+	public NodeElement(int data) {
+		this.data = data;
+	}
+}
+
+public class InsertNodeAtGivenPosition {
+
+	public static void main(String[] args) {
+		InsertNodeAtGivenPosition in = new InsertNodeAtGivenPosition();
+		NodeElement nodeElement1 = new NodeElement(1);
+		NodeElement nodeElement2 = new NodeElement(2);
+		NodeElement nodeElement3 = new NodeElement(3);
+		NodeElement nodeElement4 = new NodeElement(4);
+		NodeElement nodeElement5 = new NodeElement(5);
+		
+		
+		
+	}
+
+}

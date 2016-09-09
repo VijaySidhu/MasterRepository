@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.google.interview.questions.RedBlackBST.java&apos; to &apos;RedBlackTree.java&apos;&#x0D;&#x0A;- Original project: &apos;questions&apos;&#x0D;&#x0A;- Original element: &apos;com.google.interview.questions.RedBlackBST.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.google.interview.questions.RedBlackTree.java&apos;" description="Rename compilation unit &apos;RedBlackBST.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;com.google.interview.questions{RedBlackBST.java" name="RedBlackTree.java" references="false" stamp="1468257496750" version="1.0"/>
+</session>

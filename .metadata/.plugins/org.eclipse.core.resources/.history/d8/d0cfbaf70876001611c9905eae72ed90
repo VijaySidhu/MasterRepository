@@ -1,0 +1,23 @@
+package com.google.interview.questions.linkedlist;
+
+class NodeAtBegin {
+
+	int data;
+
+	NodeAtBegin next;
+
+	public NodeAtBegin(int data) {
+		this.data = data;
+	}
+}
+
+public class InsertAtBeginning {
+	public static void main(String[] args) {
+
+	}
+
+	NodeAtBegin insertAtBegin(NodeAtBegin head, int data) {
+
+	}
+
+}
