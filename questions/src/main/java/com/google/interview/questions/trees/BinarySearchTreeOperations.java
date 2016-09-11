@@ -6,7 +6,8 @@ public class BinarySearchTreeOperations {
 		BinarySearchTreeOperations op = new BinarySearchTreeOperations();
 		op.find(25);
 		op.insert(15);
-		op.delete(30);
+		BinarySearchTree deleted = op.delete(BinarySearchTree.createBinarySearchTree(), 50);
+		printLeftToRight(deleted);
 	}
 
 	/**
@@ -47,148 +48,102 @@ public class BinarySearchTreeOperations {
 	 * help of par­ent node. Time Complexity O(logn) Worst Case = O(n) Space
 	 * O(n)
 	 */
-	public boolean insert(int id) {
-		BinarySearchTree newNode = new BinarySearchTree(id);
+	public void insert(int id) {
 		BinarySearchTree root = BinarySearchTree.createBinarySearchTree();
-		BinarySearchTree current = root;
-		BinarySearchTree parent = null;
-		// If there is no node in tree
-		if (current == null) {
-			current = newNode;
-			return true;
-		}
-		// find place for new node and insert
-		while (true) {
-			parent = current;
-			if (id < current.data) {
-				current = current.left;
-				if (current == null) {
-					parent.left = newNode;
-					DisplayTree.display(root);
-					return true;
-				}
-			} else {
-				current = current.right;
-				if (current == null) {
-					parent.right = newNode;
-					DisplayTree.display(root);
-					return true;
-				}
-			}
+		BinarySearchTree inserted = this.insertRecursion(root, id);
+		//Print in descending order
+		System.out.println("Descending order");
+		printRightToLeft(root);
+		System.out.println("Ascending order");
+		//Print in ascending order
+		printLeftToRight(root);
+		return;
+	}
 
+	static private BinarySearchTree insertRecursion(BinarySearchTree node, int value) {
+		if (node == null) {
+			return new BinarySearchTree(value);
+		} else if (node.data < value) {
+			node.right = insertRecursion(node.right, value);
+		} else if (node.data > value) {
+			node.left = insertRecursion(node.left, value);
+		}
+		return node;
+	}
+
+	static public void printRightToLeft(BinarySearchTree node) {
+		if (node != null) {
+			if (node.right != null) {
+				printRightToLeft(node.right);
+			}
+			System.out.println(node.data);
+			if (node.left != null) {
+				printRightToLeft(node.left);
+			}
+		}
+	}
+
+	static public void printLeftToRight(BinarySearchTree node) {
+		if (node != null) {
+			if (node.left != null) {
+				printLeftToRight(node.left);
+			}
+			System.out.println(node.data);
+			if (node.right != null) {
+				printLeftToRight(node.right);
+			}
 		}
 	}
 
 	/**
-	 *         Three different Cases
-	 * 1. Node to be deleted is a leaf node ( No Children). 
-	 * 2. Node to be deleted has only one child. 
-	 * 3. Node to be deleted has two childrens.
+	 * Three different Cases 1. Node to be deleted is a leaf node ( No
+	 * Children). 2. Node to be deleted has only one child. 3. Node to be
+	 * deleted has two childrens.
 	 * 
-	 * Case1: Traverse Tree Keep Track of parent and find if set parent.left or parent.right to NULL
-	 * Case2: If a node to be deleted(deleteNode) has only one child then just tra­verse to that node, keep track of par­ent node 
-	 * and the side in which the node exist(left or right). check which side child is null (since it has only one child).Say node to 
-	 * be deleted has child on its left side . Then take the entire sub tree from the left side and add it to the par­ent and the side on which deleteN­ode exist
-	 * Case 3: Find Successor- Suc­ces­sor is the smaller node in the right sub tree of the node to be deleted. Successor will replace deleted Node
+	 * Case1: Traverse Tree Keep Track of parent and find if set parent.left or
+	 * parent.right to NULL Case2: If a node to be deleted(deleteNode) has only
+	 * one child then just tra­verse to that node, keep track of par­ent node
+	 * and the side in which the node exist(left or right). check which side
+	 * child is null (since it has only one child).Say node to be deleted has
+	 * child on its left side . Then take the entire sub tree from the left side
+	 * and add it to the par­ent and the side on which deleteN­ode exist Case 3:
+	 * Find Successor- Suc­ces­sor is the smaller node in the right sub tree of
+	 * the node to be deleted. Successor will replace deleted Node
 	 */
-	public void delete(int id) {
-		BinarySearchTree root = BinarySearchTree.createBinarySearchTree();
-		BinarySearchTree current = root;
-		BinarySearchTree parent = root;
-		boolean isLeftChild = true;
-		while (current.data != id) {
-			parent = current;
-			// Left Subtree
-			if (current.data > id) {
-				isLeftChild = true;
-				current = current.left;
+	public BinarySearchTree delete(BinarySearchTree node, int value) {
+		if (node.data < value) {
+			node.right = delete(node.right, value);
+		} else if (node.data > value) {
+			node.left = delete(node.left, value);
+		} else {
+			if (node.right == null) {
+				return node.left;
 			}
-			// Right subtree
-			else {
-				isLeftChild = false;
-				current = current.right;
+			if (node.left == null) {
+				return node.right;
 			}
-			if (current == null) {
-				return;
-			}
-
+			BinarySearchTree temp = node;
+			node = min(temp.right);
+			node.right = deleteMin(temp.right);
+			node.left = temp.left;
 		}
-		// Case 1: If node to be deleted has no children
+		return node;
+	}
 
-		if (current.left == null && current.right == null) {
-			if (current == root) {
-				root = null;
-			}
-			if (isLeftChild) {
-				parent.left = null;
-				System.out.println("No Children Case");
-				DisplayTree.display(root);
-
-			} else {
-				parent.right = null;
-				System.out.println("No Children Case");
-				DisplayTree.display(root);
-			}
-
-		}
-		// Case 2: If node to be deleted has 1 child
-		else if (current.right == null) {
-			if (current == root) {
-				root = current.left;
-			} else if (isLeftChild) {
-				parent.left = current.left;
-			} else {
-				parent.right = current.left;
-			}
-		} else if (current.left == null) {
-			if (current == root) {
-				root = current.right;
-			} else if (isLeftChild) {
-				parent.left = current.right;
-				System.out.println("One Left Child Case::");
-				DisplayTree.display(root);
-			} else {
-				parent.right = current.right;
-				System.out.println("One Right Child Case::");
-				DisplayTree.display(root);
-			}
-		} /*Case 3 with Both Childs*/
-		else if (current.left != null && current.right != null) {
-			// We have found minimum element of right subtree
-			BinarySearchTree successor = getSuccessor(current);
-			if (current == root) {
-				root = successor;
-			} else if (isLeftChild) {
-				parent.left = successor;
-			} else {
-				parent.right = successor;
-			}
-			successor.left = current.left;
-			System.out.println("Root Node Case:: ");
-			DisplayTree.display(root);
-
+	private BinarySearchTree min(BinarySearchTree node) {
+		if (node.left == null) {
+			return node;
+		} else {
+			return min(node.left);
 		}
 	}
 
-	BinarySearchTree getSuccessor(BinarySearchTree deletionNode) {
-		BinarySearchTree successsor = null;
-		BinarySearchTree successsorParent = null;
-		BinarySearchTree current = deletionNode.right;
-		while (current != null) {
-			successsorParent = successsor;
-			successsor = current;
-			current = current.left;
+	private BinarySearchTree deleteMin(BinarySearchTree node) {
+		if (node.left == null) {
+			return node.right;
 		}
-		// check if successor has the right child, it cannot have left child for
-		// sure
-		// if it does have the right child, add it to the left of
-		// successorParent.
-		// successsorParent
-		if (successsor != deletionNode.right) {
-			successsorParent.left = successsor.right;
-			successsor.right = deletionNode.right;
-		}
-		return successsor;
+		node.left = deleteMin(node.left);
+		return node;
 	}
 
 }
