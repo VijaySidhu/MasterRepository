@@ -1,0 +1,56 @@
+package com.google.interview.questions.trees;
+
+/**
+ * It can be done given travesal order. It can be done if given order in inOrder
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class ConstructBinaryTree {
+
+	static int preIndex = 0;
+
+	TreeNode buildTree(char in[], char pre[], int inStrt, int inEnd) {
+
+		if (inStrt > inEnd)
+			return null;
+
+		/*
+		 * Pick current node from Preorder traversal using preIndex and
+		 * increment preIndex
+		 */
+		TreeNode tNode = new TreeNode(pre[preIndex++]);
+
+		/* If this node has no children then return */
+		if (inStrt == inEnd)
+			return tNode;
+
+	}
+
+	/**
+	 * Utility method to search char from array
+	 * 
+	 * @param args
+	 */
+
+	int search(char arr[], int start, int end, char value) {
+		int i;
+		for (i = start; i <= end; i++) {
+			if (arr[i] == value) {
+				return i;
+			}
+		}
+		return i;
+	}
+
+	public static void main(String[] args) {
+
+		char in[] = new char[] { 'D', 'B', 'E', 'A', 'F', 'C' };
+
+		char pre[] = new char[] { 'A', 'B', 'D', 'E', 'C', 'F' };
+
+		int len = in.length;
+
+	}
+
+}

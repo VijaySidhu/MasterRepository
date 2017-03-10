@@ -1,0 +1,14 @@
+package com.google.interview.questions.linkedlist;
+
+public class SortedInsertion {
+
+	Node head;
+
+	public void sortedInsert(Node newNode) {
+
+		if (head == null || head.data >= newNode.data) {
+
+		}
+
+	}
+}

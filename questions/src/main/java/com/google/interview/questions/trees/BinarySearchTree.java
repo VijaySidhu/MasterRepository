@@ -19,6 +19,7 @@ public class BinarySearchTree {
 		BinarySearchTree node35 = new BinarySearchTree(35);
 		BinarySearchTree node40 = new BinarySearchTree(40);
 		BinarySearchTree node50 = new BinarySearchTree(50);
+		BinarySearchTree node45 = new BinarySearchTree(45);
 		BinarySearchTree node60 = new BinarySearchTree(60);
 		rootNode.left = node20;
 		rootNode.right = node40;
@@ -27,6 +28,7 @@ public class BinarySearchTree {
 		node40.left = node35;
 		node40.right = node50;
 		node50.right = node60;
+		node50.left = node45;
 		return rootNode;
 	}
 

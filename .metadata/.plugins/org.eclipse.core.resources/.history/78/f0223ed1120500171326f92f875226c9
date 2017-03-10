@@ -1,0 +1,18 @@
+package com.google.interview.questions.arrays;
+
+public class SingleNumber {
+
+	public static int singleNumber(int[] A) {
+		int x = 0;
+		for (int a : A) {
+			x = x ^ a;
+		}
+		return x;
+	}
+
+	public static void main(String[] args) {
+		int[] a = { 2, 2, 3, 3, 4, 4, 6, 6, 7, 8, 8 };
+		System.out.println(singleNumber(a));
+	}
+
+}

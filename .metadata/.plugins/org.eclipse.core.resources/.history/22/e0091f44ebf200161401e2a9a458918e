@@ -1,0 +1,9 @@
+package com.google.interview.questions.linkedlist;
+
+public class SortedInsertion {
+	Node head;
+
+	public void sortedInsert() {
+
+	}
+}

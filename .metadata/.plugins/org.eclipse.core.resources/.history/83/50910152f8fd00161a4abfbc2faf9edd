@@ -1,0 +1,90 @@
+package com.techscreenmaster.account.model;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "login")
+public class LoginEntity {
+
+	private int id;
+
+	@Column(name = "email_address")
+	private String emailAddress;
+
+	@Column(name = "password")
+	private String password;
+
+	@Column(name = "login_id")
+	private String loginId;
+
+	private AccountEntity account;
+
+	public LoginEntity() {
+
+	}
+
+	public LoginEntity(String email_address) {
+		this.emailAddress = email_address;
+	}
+
+	public LoginEntity(String emailAddress, String password, AccountEntity account) {
+		this.emailAddress = emailAddress;
+		this.account = account;
+		this.password = password;
+	}
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getemailAddress() {
+		return emailAddress;
+	}
+
+	public void setemailAddress(String name) {
+		this.emailAddress = name;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "accountId", referencedColumnName="accountId")
+	public AccountEntity getAccount() {
+		return account;
+	}
+
+	//@ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	//@JoinColumn(name = "loginId", insertable = false, updatable = false)
+	public void setAccount(AccountEntity account) {
+		this.account = account;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getLoginId() {
+		return loginId;
+	}
+
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
+	}
+}

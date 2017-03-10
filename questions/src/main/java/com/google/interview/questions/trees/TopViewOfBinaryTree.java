@@ -47,13 +47,11 @@ public class TopViewOfBinaryTree {
 		printTopView(node.left);
 		System.out.print(node.data + " ");
 		if (node == temp) {
+			// Avoid duplicate prints
 			node = node.right;
-			while (node != null) {
-				System.out.print(node.data + " ");
-				node = node.right;
-			}
+			System.out.print(node.data + " ");
+			printTopView(node.right);
 		}
-
 	}
 
 }

@@ -1,0 +1,16 @@
+1488091396607	Rename type 'AccountService'
+1488095273812	Delete element
+1488095517144	Rename type 'AccountResource'
+1488095559773	Rename type 'CustomerService'
+1488095868641	Rename type 'Customer'
+1488127899432	Delete element
+1488171265006	Copy compilation unit
+1488214935076	Copy file
+1488228298999	Rename type 'CustomerEntity'
+1488228375691	Rename type 'Account'
+1488229095901	Rename type 'CustomerRepository'
+1488242678497	Delete elements
+1488263836496	Rename type 'CustomerResource'
+1488264072308	Delete elements
+1488268395330	Rename local variable 'capitalOne'
+1488312703761	Rename field 'id'

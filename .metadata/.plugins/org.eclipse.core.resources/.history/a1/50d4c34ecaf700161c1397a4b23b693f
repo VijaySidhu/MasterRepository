@@ -1,0 +1,27 @@
+package com.google.interview.questions.trees;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BreadthOrLevelOrderTravese {
+
+	void printLevelOrder(TreeNode node) {
+		Queue<TreeNode> queue = new LinkedList<>();
+		if (node != null) {
+			queue.add(node);
+		}
+
+		while (!queue.isEmpty()) {
+
+			TreeNode current = (TreeNode) queue.remove();
+			System.out.println(current.key);
+
+			if (current.left != null) {
+
+			}
+
+		}
+
+	}
+
+}

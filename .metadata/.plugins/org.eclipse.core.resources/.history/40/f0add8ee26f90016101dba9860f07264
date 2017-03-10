@@ -1,0 +1,19 @@
+package com.google.interview.questions.trees;
+
+public class MirrorConversion {
+
+	TreeNode mirror(TreeNode root) {
+
+		if (root == null) {
+			return root;
+		}
+
+		TreeNode left = mirror(root.left);
+		TreeNode right = mirror(root.right);
+		root.left = right;
+		root.right = left;
+		return root;
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.google.interview.questions.trees;
+
+/**
+ * Size of a tree = Size of left subtree + 1 + Size of right subtree
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class SizeOfTree {
+
+	int size(TreeNode root) {
+		if (root == null) {
+			return 0;
+		}
+	}
+
+}

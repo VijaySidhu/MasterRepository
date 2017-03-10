@@ -33,6 +33,14 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\workspace-sts-3.7.release\customer-request-api"/>
+			<item value="C:\workspace-sts-3.7.release\account-service"/>
+			<item value="C:\workspace-sts-3.7.release\jpa-onetomany-springboot-maven-mysql"/>
+			<item value="C:\workspace-sts-3.7.release\customer-request-service"/>
+			<item value="C:\workspace-sts-3.7.release\interview-service"/>
+			<item value="C:\workspace-sts-3.7.release\spring-react-example"/>
+			<item value="C:\workspace-sts-3.7.release\level-money-report"/>
+			<item value="C:\workspace-sts-3.7.release\MasterRepository\princeton-java-algorithms"/>
 			<item value="C:\workspace-sts-3.7.release\sample-person-api"/>
 			<item value="C:\workspace-sts-3.7.release\uw-sample-person-api"/>
 			<item value="C:\workspace-sts-3.7.release\gs-uploading-files\complete"/>
@@ -85,6 +93,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.google.interview.aws"/>
 			<item value="com.google.interview.questions"/>
 			<item value="GoogleQuestions.GoogleQuestions"/>
 		</list>
@@ -93,6 +102,7 @@
 			<item value="GoogleQuestions"/>
 		</list>
 		<list key="artifactId">
+			<item value="aws"/>
 			<item value="questions"/>
 			<item value="GoogleQuestions"/>
 		</list>

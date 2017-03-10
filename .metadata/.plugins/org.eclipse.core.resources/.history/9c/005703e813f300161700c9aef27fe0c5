@@ -1,0 +1,14 @@
+package com.google.interview.questions.linkedlist;
+
+public class DeleteNodeGivenPointer {
+	
+	Node head;
+	
+	public void deleteNode(Node nodePointer){
+		Node temp = nodePointer.next;
+		nodePointer.data = temp.data;
+		nodePointer.next = temp.next;
+		temp = null;
+	}
+
+}

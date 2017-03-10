@@ -1,0 +1,12 @@
+package com.techscreenmaster.account.service;
+
+import com.techscreenmaster.account.model.CustomerEntity;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public void saveCustomer(CustomerEntity customerEntity) {
+		System.out.println("Hitting Service");
+	}
+
+}

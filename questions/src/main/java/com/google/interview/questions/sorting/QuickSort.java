@@ -1,5 +1,11 @@
 package com.google.interview.questions.sorting;
-
+/**
+ * best Case O(nlogn)
+ * worst case(o(n*n)
+ * Avg case O(nlogn)
+ * @author VijaySidhu
+ *
+ */
 public class QuickSort {
 
 	private int[] array;

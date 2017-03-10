@@ -1,0 +1,5 @@
+package com.google.interview.elevator;
+
+public class Elevator {
+
+}

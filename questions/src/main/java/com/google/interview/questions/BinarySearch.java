@@ -29,9 +29,9 @@ public class BinarySearch {
 			else if (array[middle] == search) {
 				System.out.println(search + " found at location " + (middle + 1) + ".");
 				break;
-			} else
+			} else {
 				last = middle - 1;
-
+			}
 			middle = (first + last) / 2;
 		}
 		if (first > last)

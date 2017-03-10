@@ -4,9 +4,10 @@ public class BinarySearchTreeOperations {
 
 	public static void main(String[] args) {
 		BinarySearchTreeOperations op = new BinarySearchTreeOperations();
-		op.find(25);
+		BinarySearchTree bst = BinarySearchTree.createBinarySearchTree();
+		System.out.println("Is Found :: " + op.find(bst, 125));
 		op.insert(15);
-		BinarySearchTree deleted = op.delete(BinarySearchTree.createBinarySearchTree(), 50);
+		BinarySearchTree deleted = op.delete(bst, 40);
 		printLeftToRight(deleted);
 	}
 
@@ -22,20 +23,22 @@ public class BinarySearchTreeOperations {
 	 * complexity is in log In this Avg case O(log n) Worst Case O(n) Space O(n)
 	 * 
 	 */
-	public boolean find(int id) {
-		BinarySearchTree bst = BinarySearchTree.createBinarySearchTree();
-		BinarySearchTree current = bst;
-		while (current != null) {
-			if (current.data == id) {
-				return true;
-			} else if (current.data > id) {
-				current = current.left;
-			} else {
-				current = current.right;
-			}
-
+	public boolean find(BinarySearchTree node, int id) {
+		BinarySearchTree current = node;
+		boolean isFound = false;
+		if (null == node) {
+			return false;
 		}
-		return false;
+		if (null != current && current.data == id) {
+			isFound = true;
+			return isFound;
+		}
+		if (node.data < id) {
+			isFound = find(node.right, id);
+		} else if (node.data > id) {
+			isFound = find(node.left, id);
+		}
+		return isFound;
 	}
 
 	/**

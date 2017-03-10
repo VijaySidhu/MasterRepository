@@ -1,0 +1,5 @@
+package com.google.interview.design.urlshortner;
+
+public class UrlShortener {
+
+}

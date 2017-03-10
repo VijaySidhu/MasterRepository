@@ -1,0 +1,19 @@
+package com.google.interview.questions.trees;
+
+public class IdenticalTrees {
+
+	TreeNode root1;
+
+	TreeNode root2;
+
+	boolean isIdenticalTrees(TreeNode root1, TreeNode root2) {
+		if (root1 == null && root2 == null) {
+			return true;
+		}
+
+		if (root1 != null && root2 != null) {
+
+		}
+	}
+
+}
