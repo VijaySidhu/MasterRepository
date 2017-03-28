@@ -11,7 +11,7 @@ public class ClosestPairToOrigin {
 		Point pt1 = new Point(0, 1);
 		Point pt2 = new Point(0, 2);
 		Point pt3 = new Point(99, 99);
-		List<Point> lst = new ArrayList<>();
+		List<Point> lst = new ArrayList<Point>();
 		lst.add(pt1);
 		lst.add(pt2);
 		lst.add(pt3);
@@ -24,7 +24,7 @@ public class ClosestPairToOrigin {
 	}
 
 	static List<Point> findClosestToOrigin(List<Point> points, int numToFind) {
-		PriorityQueue<Point> closestPoints = new PriorityQueue<>(Collections.reverseOrder());
+		PriorityQueue<Point> closestPoints = new PriorityQueue(Collections.reverseOrder());
 		for (Point point : points) {
 			if (closestPoints.size() < numToFind) {
 				closestPoints.add(point);
@@ -33,7 +33,7 @@ public class ClosestPairToOrigin {
 				closestPoints.add(point);
 			}
 		}
-		List<Point> closeList = new ArrayList<>();
+		List<Point> closeList = new ArrayList();
 		while (!closestPoints.isEmpty()) {
 			closeList.add(closestPoints.poll());
 		}

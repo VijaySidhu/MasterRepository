@@ -1,0 +1,59 @@
+package com.google.interview.questions.stacks;
+
+import java.util.Stack;
+
+/**
+ * 1) Declare a character stack S. 2)
+ * Now traverse the expression string
+ * exp. a) If the current character is a
+ * starting bracket (‘(‘ or ‘{‘ or ‘[‘)
+ * then push it to stack. b) If the
+ * current character is a closing
+ * bracket (‘)’ or ‘}’ or ‘]’) then pop
+ * from stack and if the popped
+ * character is the matching starting
+ * bracket then fine else parenthesis
+ * are not balanced. 3) After complete
+ * traversal, if there is some starting
+ * bracket left in stack then “not
+ * balanced”
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class BalancedParenthsis {
+	public static String  checkBalance(String str) {
+		Stack stack = new Stack();
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+			if (ch == '[' || ch == '(' || ch == '{') {
+				stack.push(ch);
+			} else if ((ch == ']' || ch == '}' || ch == ')')
+					&& (!stack.isEmpty())) {
+				if (((char) stack.peek() == '(' && ch == ')')
+						|| ((char) stack.peek() == '{' && ch == '}')
+						|| ((char) stack.peek() == '[' && ch == ']')) {
+					stack.pop();
+				} else {
+					return "Not Balanced";
+				}
+			} else {
+				if ((ch == ']' || ch == '}' || ch == ')')) {
+					return "Not Balanced";
+				}
+			}
+		}
+		if (stack.isEmpty())
+			return "Balanced Parenthisis";
+		else
+			return "Not Balanced";
+	}
+	public static void main(String[] args) {
+		String str = "([{}])";
+		if (str.isEmpty()) {
+			System.out.println("Empty String");
+			return;
+		}
+		System.out.println(BalancedParenthsis.checkBalance(str));
+	}
+}

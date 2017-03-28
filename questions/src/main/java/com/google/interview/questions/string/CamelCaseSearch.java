@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class CamelCaseSearch {
 	public static void main(String args[]) {
 		ArrayList<String> list = new ArrayList<String>();
-		Map<String, List<Integer>> map = new HashMap<>();
+		Map<String, List<Integer>> map = new HashMap();
 		list.add("HiHello");
 		list.add("HelloYou");
 		list.add("HelloYouThere");

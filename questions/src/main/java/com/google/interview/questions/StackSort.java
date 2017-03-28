@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class StackSort {
 	public static void main(String[] args) {
-		Stack<Integer> unSortedStack = new Stack<>();
+		Stack<Integer> unSortedStack = new Stack();
 		unSortedStack.push(new Integer(5));
 		unSortedStack.push(new Integer(6));
 		unSortedStack.push(new Integer(8));
@@ -17,7 +17,7 @@ public class StackSort {
 	}
 
 	public static Stack<Integer> sort(Stack<Integer> s) {
-		Stack<Integer> r = new Stack<>();
+		Stack<Integer> r = new Stack();
 		while (!s.isEmpty()) {
 			int tmp = s.pop();
 			while (!r.isEmpty() && r.peek() > tmp) {

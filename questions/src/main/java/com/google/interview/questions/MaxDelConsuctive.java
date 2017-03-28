@@ -10,8 +10,8 @@ public class MaxDelConsuctive {
 		Scanner scanString = new Scanner(System.in);
 		String fullNumber = "";
 		int num_1 = scanString.nextInt();
-		List<Integer> ints = new ArrayList<>();
-		Stack<Digit> stack = new Stack<>();
+		List<Integer> ints = new ArrayList();
+		Stack<Digit> stack = new Stack();
 		while (num_1 > 0) {
 			int currentDigit = num_1 % 10;
 			num_1 = num_1 / 10;

@@ -12,7 +12,7 @@ public class JumbledNumber {
 	}
 
 	private List<String> getJumbledNumbers(int n) {
-		List<String> jumbledNumbers = new ArrayList<>();
+		List<String> jumbledNumbers = new ArrayList();
 		for (int i = 1; i < n; i++) {
 			if (i > 9) {
 				String currentNumber = String.valueOf(i);

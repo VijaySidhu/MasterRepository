@@ -1,0 +1,12 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * Input : arr1[] = {1, 2} arr2[] = {3,
+ * 4} N = 3 Output : 6
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class NthItemSetFormedBySumOfTwoArrays {
+
+}

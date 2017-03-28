@@ -17,7 +17,7 @@ public class StringReverseBigOn {
 
 	private static String reverse(String input) {
 		String reversed = "";
-		Set<Character> set = new HashSet<>();
+		Set<Character> set = new HashSet<Character>();
 		for (int i = input.length() - 1; i >= 0; i--) {
 			if (!set.contains(input.charAt(i))) {
 				set.add(input.charAt(i));

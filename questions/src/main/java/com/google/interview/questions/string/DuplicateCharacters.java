@@ -13,7 +13,7 @@ public class DuplicateCharacters {
 	}
 
 	private static void findduplicates(String line) {
-		Map<Character, Integer> map = new HashMap<>();
+		Map<Character, Integer> map = new HashMap();
 		for (int i = 0; i <= line.length() - 1; i++) {
 			Character ch = line.charAt(i);
 			if (!map.containsKey(ch)) {

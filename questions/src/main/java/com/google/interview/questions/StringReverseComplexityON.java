@@ -14,7 +14,7 @@ public class StringReverseComplexityON {
 			return input;
 		}
 
-		Set<Character> alreadyPrintedChar = new HashSet<>();
+		Set<Character> alreadyPrintedChar = new HashSet();
 		String reversed = "";
 		for (int index = input.length() - 1; index >= 0; index--) {
 			Character ch = input.charAt(index);

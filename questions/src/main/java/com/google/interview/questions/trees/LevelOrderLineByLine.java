@@ -6,7 +6,7 @@ import java.util.Queue;
 public class LevelOrderLineByLine {
 
 	public void levelOrderQueue(TreeNode root) {
-		Queue q = new LinkedList<>();
+		Queue q = new LinkedList();
 		int levelNodes = 0;
 		if (root == null)
 			return;

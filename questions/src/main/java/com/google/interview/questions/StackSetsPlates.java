@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class StackSetsPlates {
 	private static final int STACK_SIZE = 3;
-	LinkedList<Stack<Integer>> stacks = new LinkedList<>();
+	LinkedList<Stack<Integer>> stacks = new LinkedList();
 
 	public void push(int item) {
 		if (stacks.isEmpty() || stacks.size() >= 3) {

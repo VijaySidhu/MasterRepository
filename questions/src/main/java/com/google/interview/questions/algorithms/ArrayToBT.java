@@ -20,7 +20,7 @@ public class ArrayToBT {
 
 	static int findMax(int n, String tree) {
 
-		Map<Integer, Integer> leftPoundsSum = new TreeMap<>();
+		Map<Integer, Integer> leftPoundsSum = new TreeMap();
 		class Pair {
 			int root;
 			int i;
@@ -71,9 +71,9 @@ public class ArrayToBT {
 				this.j = j;
 			}
 		}
-		List<Pair> pairs = new ArrayList<>();
-		Stack<Pair> st = new Stack<>();
-		Map<Integer, Pair> map = new TreeMap<>();
+		List<Pair> pairs = new ArrayList();
+		Stack<Pair> st = new Stack();
+		Map<Integer, Pair> map = new TreeMap();
 		String[] arr = tree.split(" ");
 		int length = arr.length;
 		for (int i = 0; i < (length - 1) / 2; i++) {

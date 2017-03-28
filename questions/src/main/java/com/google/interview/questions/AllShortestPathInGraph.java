@@ -30,7 +30,7 @@ public class AllShortestPathInGraph {
         }
 
         int shortestDistance =0;
-        Deque<QueueNode> deque = new LinkedList<>();
+        Deque<QueueNode> deque = new LinkedList();
         int shortestPath = 0;
         boolean found = false;
         deque.add(new QueueNode(source,0));

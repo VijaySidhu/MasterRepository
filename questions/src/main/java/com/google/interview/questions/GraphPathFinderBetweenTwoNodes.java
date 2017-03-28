@@ -40,7 +40,7 @@ public class GraphPathFinderBetweenTwoNodes {
 	}
 
 	public static boolean searchRoute(GraphNode g, Node start, Node end) {
-		LinkedList<Node> q = new LinkedList<>();
+		LinkedList<Node> q = new LinkedList();
 		if (start != null) {
 			start.state = State.Visiting;
 			q.add(start);

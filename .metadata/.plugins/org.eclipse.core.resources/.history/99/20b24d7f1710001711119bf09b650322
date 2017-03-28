@@ -1,0 +1,15 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * The idea is to use Greedy Approach
+ * and try to bring elements having
+ * greater difference closer.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class MaxSumConsecutiveDifferenceArray {
+
+	
+	
+}

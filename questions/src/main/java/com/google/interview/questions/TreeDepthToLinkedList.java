@@ -22,9 +22,9 @@ public class TreeDepthToLinkedList {
 	public ArrayList<LinkedList<TreeNode>> findLevelLinkedList(TreeNode root) {
 		int level = 0;
 
-		ArrayList<LinkedList<TreeNode>> result = new ArrayList<>();
+		ArrayList<LinkedList<TreeNode>> result = new ArrayList();
 
-		LinkedList<TreeNode> list = new LinkedList<>();
+		LinkedList<TreeNode> list = new LinkedList();
 		list.add(root);
 		result.add(level, list);
 		while (true) {

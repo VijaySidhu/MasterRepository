@@ -9,7 +9,7 @@ public class RearrangePositiveAndNegative {
 		/**
 		 * Arrange all negative on left and positive on right
 		 */
-		while (right > left) {
+		while (left < right ) {
 
 			while (array[left] < 0 && left < right) {
 				left++;

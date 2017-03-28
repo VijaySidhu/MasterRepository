@@ -1,0 +1,18 @@
+package com.google.interview.questions.stacks;
+
+import java.util.Arrays;
+
+public class KStacksInArray {
+
+	private static final int STACK_SIZE = 50;
+	private static final int STACK_NUM = 3;
+
+	private static int[] stackPointers = new int[STACK_NUM];
+
+	static {
+		Arrays.fill(stackPointers, -1);
+	}
+
+	private int[] buffer = new int[STACK_SIZE * STACK_NUM];
+
+}

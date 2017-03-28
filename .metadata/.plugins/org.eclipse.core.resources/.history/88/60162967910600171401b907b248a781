@@ -1,0 +1,30 @@
+package com.google.interview.questions.arrays;
+
+//O (N)
+public class SubArrayProductPositiveNegative {
+	static int product(int A[], int begin, int end) {
+		int i, step, mh, ma;
+
+		step = begin > end ? -1 : 1;
+
+		ma = A[begin];
+		mh = 1;
+		for (i = begin; i != end; i += step) {
+			mh *= A[i];
+			if (mh > ma)
+				ma = mh;
+			if (A[i] == 0)
+				mh = 1;
+		}
+
+		return ma;
+	}
+
+	int max_subarray_product(int A[], int n) {
+		int x, y;
+		x = product(A, 0, n - 1);
+		y = product(A, n - 1, 0);
+		return x > y ? x : y;
+	}
+
+}

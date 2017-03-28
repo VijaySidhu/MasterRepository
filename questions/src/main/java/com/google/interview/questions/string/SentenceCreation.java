@@ -16,7 +16,7 @@ public class SentenceCreation {
 	public static boolean sentenceCreation(String text, String pattern) {
 		List<String> listTextWords = Arrays.asList(text.split(" "));
 		List<String> listPatternWords = Arrays.asList(pattern.split(" "));
-		Map<String, String> map = new HashMap<>();
+		Map<String, String> map = new HashMap<String, String>();
 		for (String textWord : listTextWords) {
 			map.put(textWord.toLowerCase(), textWord.toLowerCase());
 		}

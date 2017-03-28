@@ -11,7 +11,7 @@ public class CamelCaseIndex {
 
 	public CamelCaseIndex(String input) {
 		this.input = input;
-		indexes = new ArrayList<>();
+		indexes = new ArrayList();
 		searchUpperCase(input);
 	}
 

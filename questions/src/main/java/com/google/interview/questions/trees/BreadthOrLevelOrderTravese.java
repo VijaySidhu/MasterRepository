@@ -6,7 +6,7 @@ import java.util.Queue;
 public class BreadthOrLevelOrderTravese {
 
 	void printLevelOrder(TreeNode node) {
-		Queue<TreeNode> queue = new LinkedList<>();
+		Queue<TreeNode> queue = new LinkedList();
 		if (node != null) {
 			queue.add(node);
 		}

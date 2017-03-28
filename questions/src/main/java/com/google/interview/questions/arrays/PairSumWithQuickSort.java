@@ -1,7 +1,28 @@
 package com.google.interview.questions.arrays;
 
 import java.util.Arrays;
-//Time Complexity O(NlogN)
+
+//Time Complexity O(NlogN) IF Array is very large No Auxilary Space
+/**
+ * A more efficient in-place solution
+ * would be to sort the array and use
+ * two pointers to scan through array
+ * from both direction i.e. beginning
+ * and end. If sum of both the values
+ * are equal to given number then we
+ * output the pair and advance them. If
+ * the sum of two numbers is less than k
+ * then we increase the left pointer,
+ * else if the sum is greater than k we
+ * decrement the right pointer, until
+ * both pointers meet at some part of
+ * the array. The complexity of this
+ * solution would be O(NlogN) due to
+ * sorting.
+ * 
+ * @author VijaySidhu
+ *
+ */
 public class PairSumWithQuickSort {
 	static void findThePairs(int inputArray[], int inputNumber) {
 		//Sorting the given array

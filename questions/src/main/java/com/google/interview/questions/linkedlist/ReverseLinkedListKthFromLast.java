@@ -14,6 +14,21 @@ public class ReverseLinkedListKthFromLast {
 		return prev;
 	}
 
+	public Node getNthNodeFromLast(Node head, int n) {
+		Node slowPointer = head;
+		Node fastPointer = head;
+		while (n > 0) {
+			fastPointer = fastPointer.next;
+			n--;
+		}
+
+		while (fastPointer != null) {
+			slowPointer = slowPointer.next;
+			fastPointer = fastPointer.next;
+		}
+		return slowPointer;
+	}
+
 	public static void main(String[] args) {
 		Node node1 = new Node(1);
 		Node node2 = new Node(2);
@@ -28,12 +43,12 @@ public class ReverseLinkedListKthFromLast {
 		Node head = node1;
 		ReverseLinkedListKthFromLast r = new ReverseLinkedListKthFromLast();
 		int k = 4;
-		int nodeToTraverse = 5 - k;
-		for (int i = 1; i <= nodeToTraverse; i++) {
-			head.next = head.next;
-		}
-		Node reversedNode = r.reverseList(head.next);
-		node1.next = reversedNode;
+
+		Node nthNode = r.getNthNodeFromLast(node1, k);
+
+		Node reversedList = r.reverseList(nthNode);
+		
+		node1.next = reversedList;
 
 		while (node1 != null) {
 			System.out.println(node1.data);

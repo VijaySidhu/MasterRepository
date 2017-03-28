@@ -9,9 +9,9 @@ public class GraphNode {
 
 	private Node node;
 
-	private Map<Node, ArrayList<Node>> adjNodes = new HashMap<>();
+	private Map<Node, ArrayList<Node>> adjNodes = new HashMap();
 
-	private List<Node> nodes = new ArrayList<>();
+	private List<Node> nodes = new ArrayList();
 
 	private int numberOfEdges;
 

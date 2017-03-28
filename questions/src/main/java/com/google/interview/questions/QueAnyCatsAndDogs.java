@@ -37,8 +37,8 @@ public class QueAnyCatsAndDogs {
 		private LinkedList<Animal> dogs;
 
 		public AnimalShelter() {
-			cats = new LinkedList<>();
-			dogs = new LinkedList<>();
+			cats = new LinkedList();
+			dogs = new LinkedList();
 		}
 
 		public void enqueue(Animal animal) {

@@ -12,10 +12,10 @@ public class Graph {
 	/*
 	 * Map Of
 	 */
-	private Map<Integer, ArrayList<Integer>> adjListsMap = new HashMap<>();
+	private Map<Integer, ArrayList<Integer>> adjListsMap = new HashMap();
 
 	public int addVertex() {
-		adjListsMap.put(++numberOfEdges, new ArrayList<>());
+		adjListsMap.put(++numberOfEdges, new ArrayList());
 		return numberOfVertices;
 	}
 
