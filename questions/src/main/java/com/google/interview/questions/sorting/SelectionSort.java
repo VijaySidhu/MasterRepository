@@ -1,7 +1,13 @@
 package com.google.interview.questions.sorting;
 
 /**
- * O(n*n)
+ * O(n*n) -> not suitable for large data sets
+ * 1. in-place comparison-based algorithm
+ * 2. Sorted list on left side
+ * 3. unsorted end at right side
+ * 4. Pick Smallest element and swap with left most element continues moving unsorted
+ *    array boundary by one element to right
+ * 
  * 
  * @author VijaySidhu
  *

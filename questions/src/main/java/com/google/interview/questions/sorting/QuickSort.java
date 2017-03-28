@@ -1,10 +1,17 @@
 package com.google.interview.questions.sorting;
+
 /**
- * best Case O(nlogn)
- * worst case(o(n*n)
+ * best Case O(nlogn) worst case(o(n*n)
  * Avg case O(nlogn)
+ * 
  * @author VijaySidhu
- *
+ * 
+ *         Pick Pivot recursivly sort
+ *         elements and put element less
+ *         than pivot on left side and
+ *         greater on right side of
+ *         pivot
+ * 
  */
 public class QuickSort {
 
@@ -52,10 +59,10 @@ public class QuickSort {
 			}
 		}
 		// call quickSort() method recursively
-		if (lowerIndex < j)
-			quickSort(lowerIndex, j);
 		if (i < higherIndex)
 			quickSort(i, higherIndex);
+		if (j > lowerIndex)
+			quickSort(lowerIndex, j);
 
 	}
 
