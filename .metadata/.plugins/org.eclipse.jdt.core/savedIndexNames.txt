@@ -106,7 +106,6 @@ INDEX VERSION 1.127+C:\workspace-sts-3.7.release\MasterRepository\.metadata\.plu
 673280691.index
 1472687350.index
 929082511.index
-746016459.index
 171951929.index
 3630306971.index
 2742994705.index
