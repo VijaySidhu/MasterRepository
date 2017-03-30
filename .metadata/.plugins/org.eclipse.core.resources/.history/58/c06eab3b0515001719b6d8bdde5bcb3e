@@ -1,0 +1,25 @@
+package com.google.interview.questions.core.java;
+
+/**
+ * An abstract class cannot be
+ * instantiated Contains both abstract
+ * and non abstract methods A class that
+ * extends an abstract class must
+ * implement all its abstract methods
+ * otherwise subclass must be declared
+ * abstract
+ * 
+ * @author VijaySidhu
+ *
+ */
+public abstract class Instrument {
+
+	protected String name;
+
+	public abstract void play();
+}
+
+abstract class StringedInstrument extends Instrument{
+	 protected int numberOfStrings;
+
+}

@@ -1,0 +1,8 @@
+package com.google.interview.questions.core.java;
+
+public class WeakReferenceExample {
+
+	public createWeakRefObject(){
+		WeakReference<String> wr = new WeakReference<String>(new String("abc"));
+	}
+}

@@ -1,0 +1,7 @@
+package com.google.interview.questions.core.java;
+
+public class ThreadSafeSingleton {
+
+	private static final ThreadSafeSingleton INSTANCE = new ThreadSafeSingleton();
+
+}

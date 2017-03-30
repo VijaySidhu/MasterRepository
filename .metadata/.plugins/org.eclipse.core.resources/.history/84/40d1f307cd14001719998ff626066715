@@ -1,0 +1,36 @@
+package com.google.interview.questions.core.java;
+
+/**
+ * Immutable classes are those class,
+ * whose object can not be modified once
+ * created, it means any modification on
+ * immutable object will result in
+ * another immutable object.
+ * 
+ * Example ::
+ * 
+ * String and StringBuffer.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public final class ImmutableClass {
+
+	private final String name;
+	private final String mobile;
+
+	public ImmutableClass(String name, String mobile) {
+		this.name = name;
+		this.mobile = mobile;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+Read more:http://javarevisited.blogspot.com/2013/03/how-to-create-immutable-class-object-java-example-tutorial.html#ixzz4ckup7DiQ
+}

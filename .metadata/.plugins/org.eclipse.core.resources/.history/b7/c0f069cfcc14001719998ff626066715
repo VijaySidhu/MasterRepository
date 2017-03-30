@@ -1,0 +1,15 @@
+package com.google.interview.questions.core.java;
+
+/**
+ * Immutable classes are those class,
+ * whose object can not be modified once
+ * created, it means any modification on
+ * immutable object will result in
+ * another immutable object.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class ImmutableClass {
+
+}

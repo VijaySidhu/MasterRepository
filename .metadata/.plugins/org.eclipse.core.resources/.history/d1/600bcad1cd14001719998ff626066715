@@ -1,0 +1,13 @@
+package com.google.interview.questions.core.java;
+
+public class ByteToStringConversion {
+
+	byte[] bytes;
+
+	public ByteToStringConversion(byte[] bytes) {
+		this.bytes = bytes;
+	}
+
+	String str = new String(bytes, "UTF-8");
+
+}

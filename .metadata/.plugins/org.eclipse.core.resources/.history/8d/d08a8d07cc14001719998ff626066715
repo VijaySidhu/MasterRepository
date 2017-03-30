@@ -1,0 +1,15 @@
+package com.google.interview.questions.core.java;
+
+public class ThreadSafeSingleton {
+
+	private static final ThreadSafeSingleton INSTANCE = new ThreadSafeSingleton();
+
+}
+
+	public static Singleton getInstance() {
+		return INSTANCE;
+	}
+
+	public void show() {
+		System.out.println("Singleon using static initialization in Java");
+}

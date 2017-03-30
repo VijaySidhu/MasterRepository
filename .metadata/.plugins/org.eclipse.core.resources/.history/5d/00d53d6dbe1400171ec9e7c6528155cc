@@ -1,0 +1,44 @@
+package com.google.interview.questions.core.java;
+
+public class WaitNotifyProducerConsumer {
+
+}
+
+/**
+ * A java bean class on which threads
+ * will work and call wait and notify
+ * methods.
+ * 
+ * @author VijaySidhu
+ *
+ */
+class Message {
+
+	String message;
+
+	public Message(String message) {
+		this.message = message;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+}
+
+class Waiter implements Runnable {
+
+	private Message msg;
+
+	public Waiter(Message m) {
+		this.msg = m;
+	}
+
+	@Override
+	public void run() {
+
+	}
+}

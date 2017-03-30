@@ -1,0 +1,12 @@
+package com.google.interview.questions.core.java;
+
+class Job{
+	
+}
+class Person{
+	// Person HAS-A job
+	Job job;
+}
+public class CompositionExample {
+
+}

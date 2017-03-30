@@ -1,0 +1,10 @@
+package com.google.interview.questions.core.java;
+import java.util.*;
+import java.lang.*;
+public class ThreadLocalExample {
+
+}
+
+class PerThreadFormatter {
+
+}

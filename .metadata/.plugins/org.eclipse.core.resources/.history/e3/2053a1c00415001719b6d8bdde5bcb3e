@@ -1,0 +1,9 @@
+package com.google.interview.questions.core.java;
+/**
+ * An abstract class cannot be instantiated
+ * @author VijaySidhu
+ *
+ */
+public abstract class Animal {
+	public abstract void eat();
+}

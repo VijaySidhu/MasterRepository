@@ -1,0 +1,65 @@
+package com.google.interview.questions.core.java;
+
+import java.util.Comparator;
+
+public class ComparatorExample {
+
+}
+
+class GradeComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		// ascending order
+		return o1.getGrade() - o2.getGrade();
+	}
+
+}
+
+class NameComparator implements Comparator {
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		String name1 = o1.getName();
+		String name2 = o2.getName();
+		return name1.compareTo(name2);
+	}
+
+class Student {
+
+	private String name;
+
+	private int age;
+
+	private int grade;
+
+	public Student(String name, int age, int grade) {
+		this.name = name;
+		this.age = age;
+		this.grade = grade;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getGrade() {
+		return grade;
+	}
+
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+}

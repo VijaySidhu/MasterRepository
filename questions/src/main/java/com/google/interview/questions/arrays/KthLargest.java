@@ -1,59 +1,76 @@
 package com.google.interview.questions.arrays;
+
+import java.util.PriorityQueue;
+
 /**
- * Average case time is O(n), 
+ * Average case time is O(n), worst case
+ * is O(n*n) Quick Select algorithm
+ * 
  * @author VijaySidhu
  *
  */
 public class KthLargest {
 
-	public static int findKthLargest(int[] nums, int k) {
-		if (k < 1 || nums == null) {
-			return 0;
+	static public int findKthLargest(int[] nums, int k) {
+		int start = 0, end = nums.length - 1, index = nums.length - k;
+		while (start < end) {
+			int pivot = partion(nums, start, end);
+			if (pivot < index)
+				start = pivot + 1;
+			else if (pivot > index)
+				end = pivot - 1;
+			else
+				return nums[pivot];
 		}
-
-		return getKth(nums.length - k + 1, nums, 0, nums.length - 1);
+		return nums[start];
 	}
 
-	public static int getKth(int k, int[] nums, int start, int end) {
-		int pivot = nums[end];
-		int left = start;
-		int right = end;
-		while (true) {
-			while (nums[left] < pivot && left < right) {
-				left++;
-			}
-
-			while (nums[right] >= pivot && right > left) {
-				right--;
-			}
-
-			if (left == right) {
+	static private int partion(int[] nums, int start, int end) {
+		int pivot = start, temp;
+		while (start <= end) {
+			while (start <= end && nums[start] <= nums[pivot])
+				start++;
+			while (start <= end && nums[end] > nums[pivot])
+				end--;
+			if (start > end)
 				break;
+			temp = nums[start];
+			nums[start] = nums[end];
+			nums[end] = temp;
+		}
+		temp = nums[end];
+		nums[end] = nums[pivot];
+		nums[pivot] = temp;
+		return end;
+	}
+
+	/**
+	 * Min Heap Approach Time complexity
+	 * is O(nlog(k)). Space complexity
+	 * is O(k)
+	 * 
+	 * @param args
+	 */
+
+	static public int findKthLargestMinHeap(int[] nums, int k) {
+		PriorityQueue<Integer> q = new PriorityQueue<Integer>(k);
+		for (int i : nums) {
+			q.offer(i);
+
+			if (q.size() > k) {
+				q.poll();
 			}
-
-			swap(nums, left, right);
 		}
 
-		swap(nums, left, end);
-
-		if (k == left + 1) {
-			return pivot;
-		} else if (k < left + 1) {
-			return getKth(k, nums, start, left - 1);
-		} else {
-			return getKth(k, nums, left + 1, end);
-		}
+		return q.peek();
 	}
 
-	public static void swap(int[] nums, int n1, int n2) {
-		int tmp = nums[n1];
-		nums[n1] = nums[n2];
-		nums[n2] = tmp;
-	}
-	
 	public static void main(String[] args) {
-		int[] a={1,2,3,4,10,5};
-		System.out.println(findKthLargest(a,4));
+		int[] a = { 1, 2, 3, 4, 10, 5 };
+		// Quick Select
+		System.out.println(findKthLargest(a, 4));
+		// Min Heap
+		System.out.println(findKthLargestMinHeap(a, 4));
 	}
 
 }

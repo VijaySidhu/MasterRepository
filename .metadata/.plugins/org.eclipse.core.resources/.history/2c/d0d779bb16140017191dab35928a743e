@@ -1,0 +1,9 @@
+package com.google.interview.questions.arrays;
+
+public class MaximumSumSwitchFromCommonElement {
+
+	// Utility function to find maximum of two integers
+	int max(int x, int y) {
+		return (x > y) ? x : y;
+	}
+}
