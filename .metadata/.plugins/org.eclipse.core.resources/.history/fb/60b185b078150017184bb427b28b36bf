@@ -1,0 +1,30 @@
+package com.google.interview.questions.core.java;
+
+public class ThreadCreation {
+
+	public static void main(String[] args) {
+		ThreadWithRunnable t1 = new ThreadWithRunnable();
+		ThreadWithRunnable t2 = new ThreadWithRunnable();
+
+		Thread thread1 = new Thread(t1, "t1");
+		Thread thread2 = new Thread(t2, "t2");
+		// Starting runnable thread
+		thread1.start();
+		thread2.start();
+	}
+}
+
+class ThreadWithRunnable implements Runnable {
+
+	String name = "MY THREAD";
+
+	@Override
+	public void run() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+
+		}
+	}
+
+}

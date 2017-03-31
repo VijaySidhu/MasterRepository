@@ -1,0 +1,15 @@
+package com.google.interview.questions.core.java;
+
+public class ThreadCreation {
+
+}
+
+class ThreadWithRunnable implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

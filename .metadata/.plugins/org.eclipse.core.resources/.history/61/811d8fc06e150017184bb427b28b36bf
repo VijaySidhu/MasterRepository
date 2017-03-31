@@ -1,0 +1,18 @@
+package com.google.interview.questions.core.java;
+
+public class StaticNestedClass {
+
+	private int id;
+
+	static final String CONSTANT = "";
+
+	// Static NEsted Class
+	static class NestedStatic {
+
+	}
+
+	//Static class object can be created with following statement.
+	public static void main(String[] args) {
+		NestedClass.NestedStatic nestedStatic = new NestedClass.NestedStatic();
+	}
+}

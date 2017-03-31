@@ -1,0 +1,12 @@
+package com.google.interview.questions.core.java;
+
+public class StaticNestedClass {
+
+	private int id;
+
+	static final String CONSTANT = "";
+
+	static class NestedStatic {
+
+	}
+}

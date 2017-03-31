@@ -1,0 +1,8 @@
+package com.google.interview.questions.core.java;
+
+public enum Currency {
+
+	PENNY(1), NICKLE(5), DIME(10), QUARTER(25);
+
+
+}

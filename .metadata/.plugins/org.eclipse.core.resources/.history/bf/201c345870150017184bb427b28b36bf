@@ -1,0 +1,15 @@
+package com.google.interview.questions.core.java;
+class SuperClass {
+
+	public SuperClass(){
+	}
+	
+	public SuperClass(int i){}
+	
+	public void test(){
+		System.out.println("super class test method");
+	}
+}
+public class SuperKeyWord {
+
+}

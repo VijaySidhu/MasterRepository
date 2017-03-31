@@ -1,0 +1,37 @@
+package com.google.interview.questions.core.java;
+
+class SuperClass {
+
+	public SuperClass() {
+	}
+
+	public SuperClass(int i) {
+	}
+
+	public void test() {
+		System.out.println("super class test method");
+	}
+}
+
+class ChildClass extends SuperClass {
+
+	public ChildClass(String str) {
+		//access super class constructor with super keyword
+		super();
+
+		//access child class method
+		test();
+
+		//use super to access super class method
+		super.test();
+	}
+
+	@Override
+	public void test() {
+		System.out.println("child class test method");
+	}
+}
+
+public class SuperKeyWord {
+
+}
