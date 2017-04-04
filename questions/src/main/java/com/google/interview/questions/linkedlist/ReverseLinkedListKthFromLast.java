@@ -1,5 +1,20 @@
 package com.google.interview.questions.linkedlist;
 
+/**
+ * Maintain two pointers – reference
+ * pointer and main pointer. Initialize
+ * both reference and main pointers to
+ * head. First move reference pointer to
+ * n nodes from head. Now move both
+ * pointers one by one until reference
+ * pointer reaches end. Now main pointer
+ * will point to nth node from the end.
+ * 
+ * Time Complexity: O(n) where n is the length of linked list.
+ * 
+ * @author VijaySidhu
+ *
+ */
 public class ReverseLinkedListKthFromLast {
 
 	public Node reverseList(Node node) {
@@ -47,7 +62,7 @@ public class ReverseLinkedListKthFromLast {
 		Node nthNode = r.getNthNodeFromLast(node1, k);
 
 		Node reversedList = r.reverseList(nthNode);
-		
+
 		node1.next = reversedList;
 
 		while (node1 != null) {

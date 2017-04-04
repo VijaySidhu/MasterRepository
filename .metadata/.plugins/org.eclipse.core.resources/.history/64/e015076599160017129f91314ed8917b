@@ -1,0 +1,19 @@
+package com.google.interview.questions.spring;
+
+/**
+ * Before Advice it is executed before
+ * the actual method call. After Advice
+ * it is executed after the actual
+ * method call. If method returns a
+ * value, it is executed after returning
+ * value. Around Advice it is executed
+ * before and after the actual method
+ * call. Throws Advice it is executed if
+ * actual method throws exception.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class SpringAOP {
+
+}

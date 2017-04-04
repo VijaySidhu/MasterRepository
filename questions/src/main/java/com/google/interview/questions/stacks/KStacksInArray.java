@@ -1,96 +1,116 @@
 package com.google.interview.questions.stacks;
 
-import java.util.Arrays;
-
+/**
+ * // Solution
+// 1) top[k] stores stack indexes for top element
+// 2) next[n] stores indexes of next available item in arr[]
+// Time: O(1) for each operation
+// Space: O(k + n), k = # of stacks, n = size of array(
+ * @author VijaySidhu
+ *
+ */
 public class KStacksInArray {
 
-	private static final int STACK_SIZE = 50;
-	private static final int STACK_NUM = 3;
+	// Holds stack elements
+		int[] arr;
 
-	private static int[] stackPointers = new int[STACK_NUM];
+		// top[k] stores stack indexes for their top elements
+		int[] top;
 
-	static {
-		Arrays.fill(stackPointers, -1);
-	}
+		// next[n] stores indexes of next available item in arr
+		int[] next;
 
-	private int[] buffer = new int[STACK_SIZE * STACK_NUM];
+		// Next Available index
+		int nextAvailable;
 
-	public void push(int stackNum, int item) {
-		if (isFull(stackNum))
-			throw new IllegalArgumentException("Stack " + stackNum + " is full!");
-		++stackPointers[stackNum];
-		buffer[getBufferIndex(stackNum)] = item;
-	}
+		// Stacks - Number of stacks
+		// Size - size of array
+		public KStacksInArray(int stacks, int size){
+			arr = new int[size];
+			next = new int[size];
+			top = new int[stacks];
 
-	public int pop(int stackNum) {
-		int val = peek(stackNum);
-		--stackPointers[stackNum];
-		return val;
-	}
+			// All stacks are empty, so indexes are -1
+			for(int i=0; i<top.length; i++){
+				top[i] = -1;
+			}
 
-	public int peek(int stackNum) {
-		if (isEmpty(stackNum))
-			throw new IllegalArgumentException("Stack " + stackNum + " is empty!");
-		return buffer[getBufferIndex(stackNum)];
-	}
+			// Set the next indexes for next[]
+			for(int i=0; i<next.length; i++){
+				next[i] = i+1;
+			}
+			// Last index has no next index
+			next[next.length-1] = -1;
 
-	public boolean isFull(int stackNum) {
-		if (stackNum < 0 || stackNum >= STACK_NUM)
-			throw new IllegalArgumentException("Stack " + stackNum + " doen't exist!");
-		return stackPointers[stackNum] >= STACK_SIZE - 1;
-	}
-
-	public boolean isEmpty(int stackNum) {
-		if (stackNum < 0 || stackNum >= STACK_NUM)
-			throw new IllegalArgumentException("Stack " + stackNum + " doen't exist!");
-		return stackPointers[stackNum] <= -1;
-	}
-
-	public void printStack(int stackNum) {
-		if (stackNum < 0 || stackNum >= STACK_NUM)
-			throw new IllegalArgumentException("Stack " + stackNum + " doen't exist!");
-		int top = getBufferIndex(stackNum);
-		int btm = stackNum * STACK_SIZE;
-		System.out.println("Stack " + stackNum + ": ");
-		for (int i = btm; i <= top; ++i) {
-			System.out.println(buffer[i] + " ");
+			// First index is first available
+			nextAvailable = 0;
 		}
-		System.out.println("[TOP]");
-	}
 
-	public void printStacks() {
-		for (int i = 0; i < STACK_NUM; ++i) {
-			printStack(i);
+		// data - data
+		// stack - stack number (from 0-k-1)
+		public void push(int data, int stack) throws Exception{
+			if(isFull()){
+				throw new Exception("Array is full");
+			}
+
+			// Store index of current available spot
+			int temp = nextAvailable;
+			// Update next available
+			nextAvailable = next[temp];
+			// Place data in array
+			arr[temp] = data;
+			// Update to store the previous top index of the stack
+			next[temp] = top[stack];
+			// Update stack's top index
+			top[stack] = temp;
+			
+
 		}
-	}
 
-	private int getBufferIndex(int stackNum) {
-		return stackPointers[stackNum] + stackNum * STACK_SIZE;
-	}
+		public int pop(int stack) throws Exception{
+			if(isEmpty(stack)){
+				throw new Exception("Stack is full");
+			}
 
-	//TEST----------------------------------
-	public static void main(String[] args) {
-		KStacksInArray stack = new KStacksInArray();
-		stack.printStacks();
-		System.out.println();
-		stack.push(0, -1);
-		stack.push(0, -2);
-		stack.push(0, -3);
-		stack.push(1, 1);
-		stack.push(1, 2);
-		stack.push(1, 3);
-		stack.push(2, 10);
-		stack.push(2, 20);
-		stack.push(2, 30);
-		stack.push(2, 40);
-		stack.printStacks();
-		System.out.println();
-		System.out.println("Pop Stack 0: " + stack.pop(0));
-		System.out.println("Pop Stack 1: " + stack.pop(1));
-		System.out.println("Pop Stack 1: " + stack.pop(1));
-		System.out.println("Pop Stack 2: " + stack.pop(2));
-		System.out.println();
-		stack.printStacks();
-	}
+			// Store index of top of stack
+			int temp = top[stack];
+			// Update top of stack to previous available index
+			top[stack] = next[temp];
+			// Update top of stack index to point to current next available
+			next[temp] = nextAvailable;
+			// Update next available to be top of stack index
+			nextAvailable = temp;
 
+			return arr[temp];
+		}
+
+		public boolean isEmpty(int stack){
+			return top[stack] == -1;
+		}
+
+		public boolean isFull(){
+			return nextAvailable == -1;
+		}
+		
+		public static void main(String[] args) throws Exception{
+			KStacksInArray ks = new KStacksInArray(3, 10);
+			
+			// Let us put some items in stack number 2
+		    ks.push(15, 2);
+		    ks.push(45, 2);
+		 
+		    // Let us put some items in stack number 1
+		    ks.push(17, 1);
+		    ks.push(49, 1);
+		    ks.push(39, 1);
+		 
+		    // Let us put some items in stack number 0
+		    ks.push(11, 0);
+		    ks.push(9, 0);
+		    ks.push(7, 0);
+		    
+		    System.out.println(ks.pop(2)); // 45
+		    System.out.println(ks.pop(1)); // 39
+		    System.out.println(ks.pop(0)); // 7
+		}
 }

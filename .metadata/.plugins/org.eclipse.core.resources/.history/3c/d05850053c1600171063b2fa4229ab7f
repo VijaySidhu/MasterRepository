@@ -1,0 +1,14 @@
+package com.google.interview.questions.string;
+
+public class StringRecursiveReversal {
+
+	String reverser = "";
+
+	public String reverse(String str) {
+		if (str.length() == 1) {
+			return str;
+		}
+
+	}
+
+}

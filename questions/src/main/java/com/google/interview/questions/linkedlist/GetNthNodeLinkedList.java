@@ -1,4 +1,9 @@
 package com.google.interview.questions.linkedlist;
+/**
+ * Time Complexity: O(n)
+ * @author VijaySidhu
+ *
+ */
 
 public class GetNthNodeLinkedList {
 	Node head; //the head of list
