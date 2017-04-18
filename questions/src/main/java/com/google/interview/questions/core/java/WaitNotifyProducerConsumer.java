@@ -3,6 +3,7 @@ package com.google.interview.questions.core.java;
 /**
  * wait
  * 
+ * 
  * Object wait methods has three
  * variance, one which waits
  * indefinitely for any other thread to

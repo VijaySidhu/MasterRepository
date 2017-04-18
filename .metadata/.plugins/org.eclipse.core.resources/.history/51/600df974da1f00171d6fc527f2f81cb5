@@ -1,0 +1,8 @@
+package com.google.interview.questions.problemsolving;
+
+public class RecursiveDeleteFiles {
+
+	public static void recursiveDelete(File file) {
+
+	}
+}

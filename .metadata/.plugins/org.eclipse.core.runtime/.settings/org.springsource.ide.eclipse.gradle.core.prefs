@@ -9,4 +9,4 @@ org.springsource.ide.eclipse.gradle.core.preferences.GradlePreferences.JAR_REMAP
 org.springsource.ide.eclipse.gradle.core.preferences.GradlePreferences.JAR_REMAP_GRADLE_TO_MAVEN=true
 org.springsource.ide.eclipse.gradle.core.preferences.GradlePreferences.JAR_REMAP_ON_OPEN_CLOSE=true
 org.springsource.ide.eclipse.gradle.core.preferences.GradlePreferencesUSE_CUSTOM_TOOLING_MODEL=false
-org.springsource.ide.eclipse.gradle.ui.wizards.GradleImportWizardPageOne.RF_HIST=C\:\\\\workspace-sts-3.7.release\\\\rest-document-archive;
+org.springsource.ide.eclipse.gradle.ui.wizards.GradleImportWizardPageOne.RF_HIST=C\:\\\\workspace-sts-3.7.release\\\\jaxenter-showcase;C\:\\\\workspace-sts-3.7.release\\\\rest-document-archive;
