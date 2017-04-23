@@ -1,5 +1,7 @@
 package com.google.interview.questions.arrays;
 
+import java.util.Arrays;
+
 public class InPlaceRemoval {
 
 	public static int removeElement(int[] A, int elem) {
@@ -18,6 +20,7 @@ public class InPlaceRemoval {
 
 	public static void main(String[] args) {
 		int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		System.out.println(removeElement(array, 7));
+		System.out.println(removeElement(array, 9));
+		System.out.println(Arrays.toString(array));
 	}
 }

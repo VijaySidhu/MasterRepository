@@ -91,5 +91,9 @@
 			<artifactId>netty</artifactId>
 			<version>3.10.5.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-couchbase</artifactId>
+		</dependency>
 	</dependencies>
 </project>

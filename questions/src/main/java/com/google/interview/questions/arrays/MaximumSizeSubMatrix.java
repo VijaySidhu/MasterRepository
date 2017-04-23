@@ -1,5 +1,5 @@
 package com.google.interview.questions.arrays;
-
+// O(m*n)
 public class MaximumSizeSubMatrix {
 	private int min(int a, int b, int c) {
 		int l = Math.min(a, b);
@@ -9,11 +9,11 @@ public class MaximumSizeSubMatrix {
 	public int maxSize(int arr[][]) {
 
 		int result[][] = new int[arr.length][arr[0].length];
-
+		// Copy Row to result array
 		for (int i = 0; i < arr.length; i++) {
 			result[i][0] = arr[i][0];
 		}
-
+		// copy column to subarray
 		for (int i = 0; i < arr[0].length; i++) {
 			result[0][i] = arr[0][i];
 		}
@@ -24,6 +24,7 @@ public class MaximumSizeSubMatrix {
 				if (arr[i][j] == 0) {
 					continue;
 				}
+				// Get minimum from Left,Diagnal,Top & add 1 to it
 				int t = min(result[i - 1][j], result[i - 1][j - 1], result[i][j - 1]);
 				result[i][j] = t + 1;
 				if (result[i][j] > max) {

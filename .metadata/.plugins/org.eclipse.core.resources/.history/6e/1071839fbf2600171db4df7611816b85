@@ -1,0 +1,15 @@
+package com.google.interview.questions.graphs;
+
+/**
+ * Given a directed and connected graph
+ * with n nodes. If there is an edge
+ * from u to v then u depends on v. Our
+ * task was to find out the sum of
+ * dependencies for every node.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class SumOfDependenciesOfNodes {
+
+}

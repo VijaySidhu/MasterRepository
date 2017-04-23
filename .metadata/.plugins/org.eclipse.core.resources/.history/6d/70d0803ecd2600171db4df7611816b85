@@ -1,0 +1,16 @@
+package com.google.interview.questions.graphs;
+
+public class Node {
+
+	private int element;
+
+	private State state;
+
+	public Node(int element, State state) {
+
+		this.element = element;
+		this.state = state;
+
+	}
+
+}

@@ -35,7 +35,7 @@ public class GraphPathFinderBetweenTwoNodes {
 		graphNode.addEdge(node2, node3);
 		graphNode.addEdge(node3, node4);
 		graphNode.addEdge(node5, node6);
-		System.out.println("Test True Case::" + GraphPathFinderBetweenTwoNodes.searchRoute(graphNode, node1, node6));
+		System.out.println("Test True Case::" + GraphPathFinderBetweenTwoNodes.searchRoute(graphNode, node1, node2));
 		System.out.println("Test False Case::" + GraphPathFinderBetweenTwoNodes.searchRoute(graphNode, node1, node6));
 	}
 

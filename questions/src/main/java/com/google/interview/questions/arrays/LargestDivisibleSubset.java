@@ -74,7 +74,7 @@ public class LargestDivisibleSubset {
 		List<Integer> res = largestDivisibleSubset(arr);
 		for (Integer in : res) {
 
-			System.out.print(in+" ");
+			System.out.print(in + " ");
 
 		}
 

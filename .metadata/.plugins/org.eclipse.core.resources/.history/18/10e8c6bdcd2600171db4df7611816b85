@@ -1,0 +1,22 @@
+package com.google.interview.questions.graphs;
+
+public class PathBetweenTwoNodes {
+
+	public static void main(String[] args) {
+
+		Node node1 = new Node(1, State.Unvisited);
+		Node node2 = new Node(1, State.Unvisited);
+		Node node3 = new Node(1, State.Unvisited);
+		Node node4 = new Node(1, State.Unvisited);
+		Node node5 = new Node(1, State.Unvisited);
+		Node node6 = new Node(1, State.Unvisited);
+		
+		// Add nodes
+		
+		Graph graph = new Graph();
+		graph.addNode(node1);
+		
+		
+	}
+
+}

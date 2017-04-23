@@ -7,7 +7,7 @@ import java.util.HashSet;
 public class LengthConsuctiveNumbers {
 
 	public static void main(String[] args) {
-		int[] array = { 1,2, 94, 93, 1000, 2, 92, 1001 };
+		int[] array = { 1,2, 95,94, 93, 1000, 2, 92, 1001 };
 		System.out.println("Max continuous length = " + maxContinuousLength(array));
 		System.out.println("Max continuous length = " + maxContinuousLength2(array));
 	}
