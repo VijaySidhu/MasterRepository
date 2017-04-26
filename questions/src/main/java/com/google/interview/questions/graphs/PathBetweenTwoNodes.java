@@ -1,7 +1,6 @@
 package com.google.interview.questions.graphs;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class PathBetweenTwoNodes {
 

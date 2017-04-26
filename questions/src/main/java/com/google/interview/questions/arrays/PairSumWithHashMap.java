@@ -54,7 +54,7 @@ public class PairSumWithHashMap {
 	public static void main(String[] args) {
 		int A[] = { 1, 4, 45, 6, 10, 8 };
 		int n = 16;
-		printpairs(A, n);
+	//	printpairs(A, n);
 		printSumPairs(A, n);
 	}
 }

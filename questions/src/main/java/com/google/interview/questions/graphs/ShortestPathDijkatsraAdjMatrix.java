@@ -69,12 +69,13 @@ public class ShortestPathDijkatsraAdjMatrix {
 			// Update dist value of the adjacent vertices of the
 			// picked vertex.
 			for (int v = 0; v < V; v++) {
+
 				// Update dist[v] if sptSet is false and there is an edge between u&v
 				// total weight from u to v is smaller than current value of dist[v]
+					if (!sptSet[v] && graph[u][v] != 0 && dist[u] != Integer.MAX_VALUE && dist[u] + graph[u][v] < dist[v]) {
+						dist[v] = dist[u] + graph[u][v];
+					}
 
-				if (!sptSet[v] && graph[u][v] != 0 && dist[u] != Integer.MAX_VALUE && dist[u] + graph[u][v] < dist[v]) {
-					dist[v] = dist[u] + graph[u][v];
-				}
 				// Break loop if we need shortest distance from source to target
 				/*
 				 * if (u == graph[u][v])

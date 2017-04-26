@@ -1,0 +1,80 @@
+package com.google.interview.questions.graphs;
+
+/**
+ * Prims Algorithm
+ * 
+ * 1) Create a set mstSet that keeps
+ * track of vertices already included in
+ * MST. 2) Assign a key value to all
+ * vertices in the input graph.
+ * Initialize all key values as
+ * INFINITE. Assign key value as 0 for
+ * the first vertex so that it is picked
+ * first. 3) While mstSet doesn’t
+ * include all vertices ….a) Pick a
+ * vertex u which is not there in mstSet
+ * and has minimum key value. ….b)
+ * Include u to mstSet. ….c) Update key
+ * value of all adjacent vertices of u.
+ * To update the key values, iterate
+ * through all adjacent vertices. For
+ * every adjacent vertex v, if weight of
+ * edge u-v is less than the previous
+ * key value of v, update the key value
+ * as weight of u-v
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class MinimumSpanningTree {
+
+	// Number of Vertices in graph
+	private static final int V = 5;
+
+	// Function to find vertex with minimum key value and from set of vertices not included in MST
+
+	int minKey(int key[], Boolean mstSet[]) {
+		int min = Integer.MAX_VALUE, minIndex = -1;
+		for (int v = 0; v < V; v++) {
+			if (mstSet[v] == false && key[v] < min) {
+				min = key[v];
+				minIndex = v;
+			}
+		}
+		return minIndex;
+	}
+
+	// Construct MST
+	void primMST(int graph[][]) {
+
+		// Array to Store MST
+		int parent[] = new int[V];
+
+		// Key values used to pick minimum weight edge in cut
+		int key[] = new int[V];
+
+		// Set of vertices not yet included in MST
+		Boolean mstSet[] = new Boolean[V];
+		// Initialize all keys as INFINITE
+		for (int i = 0; i < V; i++) {
+			key[i] = Integer.MAX_VALUE;
+			mstSet[i] = false;
+		}
+
+		// Always include first vertex in MST mark first vertex to zero so it should be picked first
+		key[0] = 0;
+		// First node is always root
+		parent[0] = -1;
+
+		// The MST will have V vertices
+
+		for (int count = 0; count < V - 1; count++) {
+			// pick the minimum
+			int u = minKey(key, mstSet);
+			// Add picked vertex to MST
+
+		}
+
+	}
+
+}
