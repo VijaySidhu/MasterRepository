@@ -1,0 +1,54 @@
+package com.google.interview.questions.graphs;
+
+/**
+ * O(ELogE + ELogV) The value of E can
+ * be atmost O(V2), so O(LogV) are
+ * O(LogE) same. Therefore, overall time
+ * complexity is O(ElogE) or O(ElogV)
+ * 
+ * @author VijaySidhu
+ * 
+ *         1. Sort all the edges in
+ *         non-decreasing order of their
+ *         weight.
+ * 
+ *         2. Pick the smallest edge.
+ *         (Use Find Union Algorithm to
+ *         find cycle) Check if it forms
+ *         a cycle with the spanning
+ *         tree formed so far. If cycle
+ *         is not formed, include this
+ *         edge. Else, discard it.
+ * 
+ *         3. Repeat step#2 until there
+ *         are (V-1) edges in the
+ *         spanning tree.
+ *
+ */
+public class MinimumSpanningTreeKurkusal {
+
+}
+
+class GraphK {
+
+	class EdgeK implements Comparable<EdgeK> {
+		int src;
+		int weight;
+		int dest;
+
+		@Override
+		public int compareTo(EdgeK o) {
+			return this.weight - o.weight;
+		}
+
+	};
+
+	// Class to represent subset for union find
+	class subset {
+		int parent, rank;
+	};
+
+	int V, E; // no. of vertices and edges
+	EdgeK edge[]; // Collection of edges
+
+}

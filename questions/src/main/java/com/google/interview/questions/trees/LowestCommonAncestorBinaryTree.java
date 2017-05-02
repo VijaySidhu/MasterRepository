@@ -3,9 +3,13 @@ package com.google.interview.questions.trees;
 import com.google.interview.questions.TreeNode;
 
 /**
- * Approach similar to approach for Common ancestor for BST. Keep going down on
- * one side(right or left) if both the nodes are in the same side(right or
- * left), else the current node is the lowest common ancestor
+ * 1. If all are null return null 
+ * 2. If data at root is same as data at node1 return root 
+ * 3. If data at root is same as data at node2 return root
+ * 4. Recurse Left and Righ subtree if left and right are not null return root
+ * 5. If left is not null return left
+ * 6. If right is not null return right
+ * 
  */
 
 public class LowestCommonAncestorBinaryTree {
@@ -24,13 +28,19 @@ public class LowestCommonAncestorBinaryTree {
 		treeNodeB.setLeft(treeNodeD);
 		treeNodeB.setRight(treeNodeE);
 		treeNodeC.setLeft(treeNodeF);
-		treeNodeC.setRight(treeNodeF);
-		TreeNode result = b.lowestCommonAncestor(treeNodeA, treeNodeB, treeNodeC);
+		treeNodeC.setRight(treeNodeG);
+		TreeNode result = b.lowestCommonAncestor(treeNodeA, treeNodeD, treeNodeE);
 		System.out.println("Lowest Common Ancestor " + result.getData());
 	}
 
 	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {
 		if (root == null || root == A || root == B) {
+			return root;
+		}
+		if (root.getData() == A.getData()) {
+			return root;
+		}
+		if (root.getData() == B.getData()) {
 			return root;
 		}
 		TreeNode left = lowestCommonAncestor(root.getLeft(), A, B);

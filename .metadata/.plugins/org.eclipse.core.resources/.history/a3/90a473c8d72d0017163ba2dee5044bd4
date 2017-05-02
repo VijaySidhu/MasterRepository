@@ -1,0 +1,35 @@
+package com.google.interview.questions.algorithms;
+
+public class MissingWords {
+
+	public static void main(String[] args) {
+		String str = "I am using HackerRank to improve programming";
+		String str2 = "am HackerRank to improve";
+		String[] result = missingWords(str, str2);
+	}
+
+	static String[] missingWords(String str, String str2) {
+
+		String words[] = str.split(" ");
+		String words2[] = str2.split(" ");
+		String result[] = new String[str.length()];
+
+		for (int i = 0; i < words.length; i++) {
+			int flag = 0;
+			for (int j = 0; j < words2.length; j++) {
+
+				if (words[i].equals(words2[j])) {
+					flag = 1;
+					words2[j] = "";
+					break;
+				}
+			}
+			if (flag == 0) {
+				result[i] =words[i];
+				System.out.print(" " + words[i]);
+			}
+		}
+		System.out.println();
+		return words;
+	}
+}

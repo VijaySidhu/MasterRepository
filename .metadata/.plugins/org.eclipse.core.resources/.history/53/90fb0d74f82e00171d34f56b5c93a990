@@ -1,0 +1,28 @@
+package com.google.interview.questions.arrays;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class SpiralMatrix {
+	public static void main(String[] args) {
+		int arr[][] = new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		SpiralMatrix display = new SpiralMatrix();
+		List<Integer> ls = display.spiralOrder(arr);
+
+		for (Integer in : ls) {
+			System.out.print(in + " ");
+		}
+	}
+
+	public List<Integer> spiralOrder(int[][] matrix) {
+
+		if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+			return Collections.EMPTY_LIST;
+		}
+		List<Integer> result = new ArrayList<Integer>();
+		
+
+		return result;
+	}
+}

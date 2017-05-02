@@ -3,10 +3,14 @@ package com.google.interview.questions.algorithms;
 import java.util.Stack;
 
 /**
- * if char is not operator concat it with postfix(result string) if char is )
- * parantheses pop stack and concat it with postfix(Resultant String) until (
- * comes if char is not ( and precedence of char at stack is > current char then
- * pop from stack and concat with postfix string
+ * if char is not operator concat it
+ * with postfix(result string) if char
+ * is ) parantheses pop stack and concat
+ * it with postfix(Resultant String)
+ * until ( comes if char is not ( and
+ * precedence of char at stack is >
+ * current char then pop from stack and
+ * concat with postfix string
  * 
  * @author VijaySidhu
  *
@@ -26,7 +30,6 @@ public class InFixToPostFix {
 		String postfix = "";
 		Stack<Character> operator = new Stack<Character>();
 		char popped;
-
 		for (int i = 0; i < infix.length(); i++) {
 
 			char get = infix.charAt(i);
@@ -39,9 +42,9 @@ public class InFixToPostFix {
 					postfix += popped;
 
 			else {
-				while (!operator.isEmpty() && get != '(' && precedence(operator.peek()) >= precedence(get))
+				while (!operator.isEmpty() && get != '(' && precedence(operator.peek()) >= precedence(get)) {
 					postfix += operator.pop();
-
+				}
 				operator.push(get);
 			}
 		}

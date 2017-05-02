@@ -1,0 +1,51 @@
+package com.google.interview.questions.trees;
+
+import com.google.interview.questions.TreeNode;
+
+/**
+ * Approach similar to approach for Common ancestor for BST. Keep going down on
+ * one side(right or left) if both the nodes are in the same side(right or
+ * left), else the current node is the lowest common ancestor
+ */
+
+public class LowestCommonAncestorBinaryTree {
+
+	public static void main(String[] args) {
+		LowestCommonAncestorBinaryTree b = new LowestCommonAncestorBinaryTree();
+		com.google.interview.questions.TreeNode treeNodeA = new com.google.interview.questions.TreeNode('a');
+		com.google.interview.questions.TreeNode treeNodeB = new com.google.interview.questions.TreeNode('b');
+		com.google.interview.questions.TreeNode treeNodeC = new com.google.interview.questions.TreeNode('c');
+		com.google.interview.questions.TreeNode treeNodeD = new com.google.interview.questions.TreeNode('d');
+		com.google.interview.questions.TreeNode treeNodeE = new com.google.interview.questions.TreeNode('e');
+		com.google.interview.questions.TreeNode treeNodeF = new com.google.interview.questions.TreeNode('f');
+		com.google.interview.questions.TreeNode treeNodeG = new com.google.interview.questions.TreeNode('g');
+		treeNodeA.setLeft(treeNodeB);
+		treeNodeA.setRight(treeNodeC);
+		treeNodeB.setLeft(treeNodeD);
+		treeNodeB.setRight(treeNodeE);
+		treeNodeC.setLeft(treeNodeF);
+		treeNodeC.setRight(treeNodeF);
+		TreeNode result = b.lowestCommonAncestor(treeNodeA, treeNodeB, treeNodeC);
+		System.out.println("Lowest Common Ancestor " + result.getData());
+	}
+
+	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {
+		if (root == null || root == A || root == B) {
+			return root;
+		}
+		TreeNode left = lowestCommonAncestor(root.getLeft(), A, B);
+		TreeNode right = lowestCommonAncestor(root.getRight(), A, B);
+		if (left != null && right != null) {
+			return root;
+		}
+
+		if (left != null) {
+			return left;
+		}
+
+		if (right != null) {
+			return right;
+		}
+		return null;
+	}
+}

@@ -1,0 +1,44 @@
+package com.google.interview.questions.algorithms;
+
+import java.util.Stack;
+
+public class Practice {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static String infixToPost(String input) {
+		String postFix = "";
+		Stack<Character> stack = new Stack<Character>();
+		int i = 0;
+		while (i <= input.length()) {
+			char ch = input.charAt(i);
+			// If it is Operand just append it to resultant string
+			if (precedence(ch) < 1) {
+				postFix = postFix + ch;
+			} else if (ch == ')') {
+				// Pop from stack until left bracket comes
+
+			} else if (ch != '(') {
+
+			}
+
+			i++;
+		}
+		return postFix;
+	}
+
+	public static int precedence(char ch) {
+		if (ch == '(' || ch == ')') {
+			return 1;
+		} else if (ch == '+' || ch == '-') {
+			return 2;
+
+		} else if (ch == '*' || ch == '/') {
+			return 3;
+		}
+		return 0;
+	}
+
+}
