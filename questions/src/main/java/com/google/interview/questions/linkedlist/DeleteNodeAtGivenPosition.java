@@ -29,15 +29,18 @@ public class DeleteNodeAtGivenPosition {
 			return;
 		}
 
-		Node next = temp.next.next;
-		temp.next = next;
+		temp.next = temp.next.next;
+		//temp.next = next;
 
 	}
 
 	/*
 	 * This function prints contents of linked list starting from the given node
 	 */
-	public void printList() {
+	public void printList(Node nodes) {
+		if(nodes == null){
+			Node tnode = nodes;
+		}
 		Node tnode = head;
 		while (tnode != null) {
 			System.out.print(tnode.data + " ");
@@ -74,12 +77,14 @@ public class DeleteNodeAtGivenPosition {
 		llist.push(8);
 
 		System.out.println("\nCreated Linked list is: ");
-		llist.printList();
+		llist.printList(llist.head);
+	    
+	   // llist.printList(Practice.deleteNode(llist.head, 3));
 
 		llist.deleteNodeAtPosition(3); // Delete node at position 4
 
 		System.out.println("\nLinked List after Deletion at position 4: ");
-		llist.printList();
+		llist.printList(null);
 	}
 
 }

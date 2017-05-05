@@ -8,29 +8,40 @@ public class SpiralForm {
 		int i;
 
 		/*
-		 * ltr -> left to right. If this variable is set then the given label is
-		 * transversed from left to right
+		 * ltr -> left to right. If this
+		 * variable is set then the
+		 * given label is transversed
+		 * from left to right
 		 */
 		boolean ltr = false;
 		for (i = 1; i <= h; i++) {
 			printGivenLevel(node, i, ltr);
 
-			/* Revert ltr to traverse next level in opposite order */
+			/*
+			 * Revert ltr to traverse
+			 * next level in opposite
+			 * order
+			 */
 			ltr = !ltr;
 		}
 
 	}
 
 	/*
-	 * Compute the "height" of a tree -- the number of nodes along the longest
-	 * path from the root node down to the farthest leaf node.
+	 * Compute the "height" of a tree --
+	 * the number of nodes along the
+	 * longest path from the root node
+	 * down to the farthest leaf node.
 	 */
 	int height(TreeNode node) {
 		if (node == null)
 			return 0;
 		else {
 
-			/* compute the height of each subtree */
+			/*
+			 * compute the height of
+			 * each subtree
+			 */
 			int lheight = height(node.left);
 			int rheight = height(node.right);
 
@@ -74,6 +85,9 @@ public class SpiralForm {
 		rootNode2.right = rootNode5;
 		SpiralForm sf = new SpiralForm();
 		sf.printSpiral(rootNode);
+		System.out.println();
+		System.out.println("Practice");
+		Practice.printZigZag(rootNode);
 	}
 
 }

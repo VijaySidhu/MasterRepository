@@ -1,0 +1,9 @@
+package com.google.interview.questions.trees;
+
+public class CountHalfNodes {
+
+	public static void main(String[] args) {
+		System.out.println(Practice.getHalfNodes(BinarySearchTree.createBinarySearchTree()));
+	}
+
+}

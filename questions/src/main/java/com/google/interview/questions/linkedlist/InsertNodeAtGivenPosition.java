@@ -48,8 +48,7 @@ public class InsertNodeAtGivenPosition {
 		}
 		NodeElement nodeAtPosition = head.next;
 		head.next = nodeToInsert;
-		head = head.next;
-		head.next = nodeAtPosition;
+		nodeToInsert.next = nodeAtPosition;
 		return trackedNode;
 	}
 

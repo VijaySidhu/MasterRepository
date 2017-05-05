@@ -10,7 +10,7 @@ public class ReverseLinkedList {
 	ListNode head;
 
 	// Iterative
-	static public ListNode reverseList(ListNode head) {
+	static public ListNode reverseListIterative(ListNode head) {
 		ListNode prev = null;
 		while (head != null) {
 			ListNode next = head.next;
@@ -22,19 +22,19 @@ public class ReverseLinkedList {
 	}
 
 
-	//Recursive
-	public ListNode recursiveApproach(ListNode curr, ListNode prev) {
-		// If we are at tail node
-		if (curr.next == null) {
-			head = curr;
-			// update next to prev node
-			curr.next = prev;
-			return null;
-		}
-		ListNode next1 = curr.next;
-		curr.next = prev;
-		recursiveApproach(next1, curr);
-		return head;
+	public static ListNode reverseList(ListNode head) {
+	    if(head==null || head.next == null)
+	        return head;
+	 
+	    //get second node    
+	    ListNode second = head.next;
+	    //set first's next to be null
+	    head.next = null;
+	 
+	    ListNode rest = reverseList(second);
+	    second.next = head;
+	 
+	    return rest;
 	}
 
 	public static void main(String[] args) {
@@ -61,10 +61,15 @@ public class ReverseLinkedList {
 		listNode3recursive.data = 3;
 		listNoderecursive.next = listNode2recursive;
 		listNode2recursive.next = listNode3recursive;
-		ListNode recursiveWay = rv.recursiveApproach(listNoderecursive, null);
+		/*ListNode recursiveWay = rv.recursiveApproach(listNoderecursive, null);
 		while (recursiveWay != null) {
 			System.out.println(recursiveWay.data);
 			recursiveWay = recursiveWay.next;
+		}*/
+		ListNode recursiveWays = reverseList(listNoderecursive);
+		while (recursiveWays != null) {
+			System.out.println(recursiveWays.data);
+			recursiveWays = recursiveWays.next;
 		}
 	}
 

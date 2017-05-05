@@ -2,8 +2,8 @@ package com.google.interview.questions.trees;
 
 public class TreeNode {
 	
-	int key;
-	TreeNode left, right;
+	public int key;
+	public TreeNode left, right;
 
 	public TreeNode(int item) {
 		key = item;

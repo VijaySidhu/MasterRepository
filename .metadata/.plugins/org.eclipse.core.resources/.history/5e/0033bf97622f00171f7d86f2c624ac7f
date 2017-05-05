@@ -1,0 +1,14 @@
+package com.google.interview.questions.linkedlist;
+
+public class RandomNumberPickInSingleTraverse {
+
+	public static void printRandom(Node node) {
+
+		if (node == null) {
+			return;
+
+		}
+
+	}
+
+}

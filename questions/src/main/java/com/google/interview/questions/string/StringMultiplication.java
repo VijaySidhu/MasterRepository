@@ -10,6 +10,7 @@ public class StringMultiplication {
 		//multiply each digit and sum at the corresponding positions
 		for (int i = 0; i < n1.length(); i++) {
 			for (int j = 0; j < n2.length(); j++) {
+				System.out.println(n1.charAt(i) - '0');
 				d[i + j] += (n1.charAt(i) - '0') * (n2.charAt(j) - '0');
 			}
 		}
@@ -35,8 +36,8 @@ public class StringMultiplication {
 	}
 
 	public static void main(String[] args) {
-		String str1 = "12";
-		String str2 = "12";
+		String str1 = "128";
+		String str2 = "128";
 		System.out.println(multiply(str1, str2));
 	}
 }

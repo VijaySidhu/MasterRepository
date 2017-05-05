@@ -1,0 +1,28 @@
+package com.google.interview.questions.linkedlist;
+
+public class Practice {
+
+	// Nth TO last
+
+	printNthFromLast(Node head,int n){
+		Node slowPointer = head;
+		Node fastPointer = head;
+		
+		
+	}
+
+	// Delete Alternate
+
+	// Reverse whole
+
+	// Reverse Pairs
+
+	// Find Cycle
+
+	// Find Middle
+
+	// Sorted Insertion
+
+	// Random Number picker
+
+}

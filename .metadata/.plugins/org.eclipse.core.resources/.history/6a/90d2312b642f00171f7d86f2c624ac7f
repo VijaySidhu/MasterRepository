@@ -1,0 +1,43 @@
+package com.google.interview.questions.linkedlist;
+
+/**
+ * 1. Initialize result with first node
+ * data 2. Initialize n = 2 3. Now one
+ * by one consider all nodes from 2nd
+ * node onward - Generate Random number
+ * from 0 to n-1 - Let generated number
+ * is j - if j==0 then choose other
+ * fixed number between 0 to n-1 - n++
+ * -current = current -- >
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class RandomNumberPickInSingleTraverse {
+
+	public static void printRandom(Node node) {
+
+		if (node == null) {
+			return;
+		}
+
+		// Initialize result with first node data
+		int result = node.data;
+		// Iterate from
+		int n = 2;
+		Node current = node;
+		while (current != null) {
+			n++;
+			if (Math.random() % n == 0) {
+				result = current.data;
+			}
+			current = current.next;
+		}
+		System.out.println("Randomly selected key is " + result);
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

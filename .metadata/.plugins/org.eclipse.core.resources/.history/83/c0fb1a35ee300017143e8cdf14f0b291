@@ -1,0 +1,11 @@
+package com.google.interview.questions.linkedlist;
+
+import com.google.interview.questions.trees.Practice;
+
+public class ConvertTreeToLinkedList {
+
+	public static void main(String[] args) {
+		Practice.convertToLinkedList(root);
+
+	}
+}

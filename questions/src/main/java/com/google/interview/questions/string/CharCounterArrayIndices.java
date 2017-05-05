@@ -11,8 +11,15 @@ public class CharCounterArrayIndices {
 		return indexes;
 	}
 
+	void print(int[] indexes) {
+		for (int in : indexes) {
+
+		}
+
+	}
+
 	public static void main(String[] args) {
-		int[] res = charCount("aaabcbddddddddddddddddddd");
+		int[] res = charCount("aaabcbddddaddddddddddddddd");
 		for (Integer in : res) {
 			if (in % 3 == 0) {
 				int total = in / 3;

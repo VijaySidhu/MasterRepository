@@ -1,0 +1,31 @@
+package com.google.interview.questions.trees;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * Approache 1 but all tree has to be
+ * traverse h = Height of Tree n =
+ * Number of nodes in the Tree if(n =
+ * 2^h -1) return true else return false
+ * Approach 2 with queue
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class IsBinaryTreeComplete {
+
+	public boolean isCompleteBinaryTree(TreeNode root) {
+		if (root == null) {
+			return true;
+		}
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+		queue.add(root);
+		while (!queue.isEmpty()) {
+
+		}
+
+		return false;
+	}
+
+}

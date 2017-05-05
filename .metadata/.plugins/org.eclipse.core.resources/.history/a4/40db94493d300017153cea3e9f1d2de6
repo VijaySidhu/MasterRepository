@@ -1,0 +1,39 @@
+package com.google.interview.questions.string;
+
+/**
+ * Smallest length string with repeated
+ * replacement of two distinct adjacent
+ * Given a string of any combination of
+ * three letters ‘a’, ‘b’, and ‘c’, find
+ * length of the smallest string that
+ * can be obtained by applying the
+ * following operation repeatedly: Take
+ * any two adjacent, distinct characters
+ * and replace them with the third.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class StringReduction {
+	int DP[][][] = new int[][][];
+
+	int stringReduction(String str) {
+		int n = str.length();
+		// Count occurance of three chars
+		int count[] = new int[3];
+		for (int i = 0; i <= n; i++) {
+			count[str.charAt(i) - 'a']++;
+		}
+		// Initialize dynamic programming entries by -1
+		for (int i = 0; i <= count[0]; i++) {
+			for (int j = 0; j <= count[1]; j++) {
+				for (int k = 0; k <= count[2]; k++) {
+
+				}
+			}
+
+		}
+
+	}
+
+}

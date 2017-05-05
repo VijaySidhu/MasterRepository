@@ -1,21 +1,19 @@
 package com.google.interview.questions.linkedlist;
 
 /**
- * O(N)
- * Method 1 Traverse linked list using
- * two pointers. Move one pointer by one
- * and other pointer by two. When the
- * fast pointer reaches end slow pointer
- * will reach middle of the linked list.
- *  O(N)
- * Method 2 Initialize mid element as
- * head and initialize a counter as 0.
- * Traverse the list from head, while
- * traversing increment the counter and
- * change mid to mid->next whenever the
- * counter is odd. So the mid will move
- * only half of the total length of the
- * list.
+ * O(N) Method 1 Traverse linked list
+ * using two pointers. Move one pointer
+ * by one and other pointer by two. When
+ * the fast pointer reaches end slow
+ * pointer will reach middle of the
+ * linked list. O(N) Method 2 Initialize
+ * mid element as head and initialize a
+ * counter as 0. Traverse the list from
+ * head, while traversing increment the
+ * counter and change mid to mid->next
+ * whenever the counter is odd. So the
+ * mid will move only half of the total
+ * length of the list.
  * 
  * @author VijaySidhu
  *
@@ -96,6 +94,7 @@ public class FindMiddleOfLinkedList {
 			llist.push(i);
 			llist.printList();
 		}
+		System.out.println(Practice.middle(llist.head));
 		llist.printMiddle();
 		llist.method2();
 	}
