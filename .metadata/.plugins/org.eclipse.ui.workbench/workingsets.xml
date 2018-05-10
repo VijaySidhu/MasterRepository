@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1472069257619_1" label="rest-document-archive" name="rest-document-archive">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rest-document-archive" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1492539624728_2" label="jaxenter-article1" name="jaxenter-article1">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jaxenter-article1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/authentication-server" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1438372815398_0" label="Window Working Set" name="Aggregate for window 1438372815398"/>
+</workingSetManager>

@@ -1,0 +1,15 @@
+package com.google.interview.questions.problemsolving;
+
+import java.io.File;
+
+public class RecursiveDeleteFiles {
+
+	public static void recursiveDelete(File file) {
+
+		if (file.exists()) {
+			return;
+		}
+
+	}
+
+}

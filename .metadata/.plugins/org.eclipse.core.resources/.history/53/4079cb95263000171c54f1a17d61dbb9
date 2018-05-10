@@ -1,0 +1,20 @@
+package com.google.interview.questions.string;
+
+public class StringRecursiveReversal {
+
+	String reverse = "";
+
+	public String reverse(String str) {
+		if (str.length() == 1) {
+			return str;
+		}
+		reverse += str.charAt(str.length() - 1) + reverse(str.substring(0, str.length() - 1));
+		return reverse;
+	}
+
+	public static void main(String[] args) {
+		StringRecursiveReversal rev = new StringRecursiveReversal();
+		System.out.println(rev.reverse("EMAN"));
+	}
+
+}

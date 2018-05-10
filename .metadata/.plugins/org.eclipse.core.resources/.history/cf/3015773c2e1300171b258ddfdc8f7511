@@ -1,0 +1,58 @@
+package com.google.interview.questions.arrays;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+
+/**
+ * O(NK log k) N is the total number of
+ * integers. k is the number of arrays.
+ * Heap Priority Queue
+ * 
+ * @author VijaySidhu
+ *
+ */
+ class ListNode {
+	     int val;
+	      ListNode next;
+	      ListNode(int x) {
+	          val = x;
+	          next = null;
+	      }
+	  }
+public class MergeKSortedArrays {
+	
+	public ListNode mergeKLists(List<ListNode> lists) {
+        // TC:O(k*n*lg(k)), SC:O(k)
+        // http://www.lifeincode.net/programming/leetcode-merge-k-sorted-lists-java/
+        if (lists == null || lists.size() == 0) {
+            return null;
+        }
+        
+        PriorityQueue<ListNode> heap = new PriorityQueue<ListNode>(lists.size(), new MyComparator());
+        for (ListNode list : lists) {
+            if (list != null) {
+                heap.offer(list);
+            }
+        }
+        
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        while (!heap.isEmpty()) {
+            ListNode node = heap.poll();
+            curr.next = node;
+            curr = node;
+            if (node.next != null) {
+                heap.offer(node.next);
+            }
+        }
+        
+        return dummy.next;
+    }
+    
+    class MyComparator implements Comparator<ListNode> {
+        public int compare(ListNode n1, ListNode n2) {
+            return n1.val - n2.val;
+        }
+    }
+}

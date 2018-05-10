@@ -1,0 +1,28 @@
+package com.google.interview.questions.core.java;
+
+/**
+ * WeakHashMap works like a normal
+ * HashMap but uses WeakReference for
+ * keys, which means if the key object
+ * doesn't have any reference then both
+ * key/value mapping will become
+ * eligible for garbage collection.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class WeakHashMapWork {
+
+}
+
+class Widget {
+
+	private byte buff[];
+	private int id;
+
+	public Widget(int id) {
+		//Each Widget object takes approximately 1MB
+		this.buff = new byte[1024 * 1000];
+		this.id = id;
+	}
+}

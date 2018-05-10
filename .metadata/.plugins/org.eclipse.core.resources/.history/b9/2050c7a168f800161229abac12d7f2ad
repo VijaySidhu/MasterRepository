@@ -1,0 +1,11 @@
+package com.google.interview.questions.trees;
+
+public class DeleteTree {
+
+	void deleteTree(TreeNode node) {
+		if (node == null) {
+			return;
+		}
+	}
+
+}

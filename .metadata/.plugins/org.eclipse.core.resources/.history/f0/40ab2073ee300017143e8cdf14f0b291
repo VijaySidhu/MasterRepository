@@ -1,0 +1,21 @@
+package com.google.interview.questions.linkedlist;
+
+import com.google.interview.questions.trees.BinarySearchTree;
+import com.google.interview.questions.trees.Practice;
+import com.google.interview.questions.trees.TreeNode;
+
+public class ConvertTreeToLinkedList {
+
+	public static void main(String[] args) {
+		TreeNode root1 = new TreeNode(1);
+		TreeNode root2 = new TreeNode(2);
+		TreeNode root3 = new TreeNode(3);
+		TreeNode root4 = new TreeNode(4);
+
+		root1.left = root2;
+		root1.right = root3;
+
+		Practice.convertToLinkedList(root);
+
+	}
+}

@@ -1,0 +1,10 @@
+package com.google.interview.questions.graphs;
+
+import java.util.Stack;
+
+public class AllPaths {
+
+	// current path
+	private Stack<String> path = new Stack<String>();
+
+}

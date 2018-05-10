@@ -1,0 +1,9 @@
+package com.google.interview.questions.trees;
+
+public class IdenticalTrees {
+
+	TreeNode root1;
+
+	TreeNode root2;
+
+}

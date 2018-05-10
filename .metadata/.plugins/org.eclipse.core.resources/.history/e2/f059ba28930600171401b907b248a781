@@ -1,0 +1,8 @@
+package com.google.interview.questions.arrays;
+
+/*
+ *  O(Logn) using Binary Search.
+ */
+public class MinElementInRotatedSortedArray {
+
+}

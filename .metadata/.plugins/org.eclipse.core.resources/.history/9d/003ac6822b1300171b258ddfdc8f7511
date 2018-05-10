@@ -1,0 +1,21 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * O(N log k) N is the total number of
+ * integers. k is the number of arrays.
+ * Heap Priority Queue
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class MergeKSortedArrays {
+	public class Node {
+		int val, x, y;
+
+		public Node(int val, int x, int y) {
+			this.val = val;
+			this.x = x;
+			this.y = y;
+		}
+	}
+}

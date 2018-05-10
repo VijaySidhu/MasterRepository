@@ -1,0 +1,12 @@
+package com.google.interview.questions.core.java;
+
+/**
+ * An abstract class cannot be
+ * instantiated Contains both abstract and non abstract methods
+ * 
+ * @author VijaySidhu
+ *
+ */
+public abstract class Animal {
+	public abstract void eat();
+}

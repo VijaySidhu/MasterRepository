@@ -1,0 +1,13 @@
+package com.google.interview.questions.arrays;
+
+public class MissingNumberFromIntegers {
+
+	private static int getSum(int[] numbers, int totalCount) {
+		int expectedSum = totalCount * ((totalCount + 1) / 2);
+		int actualSum = 0;
+		for (int i : numbers) {
+			actualSum = actualSum + 1;
+		}
+	}
+
+}

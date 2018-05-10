@@ -1,0 +1,25 @@
+package com.google.interview.questions.linkedlist;
+
+/**
+ * 1. Initialize result with first node data
+ * 2. Initialize n = 2
+ * 3. Now one by one consider all nodes from 2nd node onward
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class RandomNumberPickInSingleTraverse {
+
+	public static void printRandom(Node node) {
+
+		if (node == null) {
+			return;
+		}
+
+		// Initialize result with first node data
+		int result = node.data;
+		// Iterate from
+
+	}
+
+}

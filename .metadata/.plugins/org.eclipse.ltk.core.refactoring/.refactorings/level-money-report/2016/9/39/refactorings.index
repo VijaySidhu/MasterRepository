@@ -1,0 +1,21 @@
+1474698341389	Rename package 'edu.uw'
+1474698544613	Rename type 'PeopleResource'
+1474699951117	Rename type 'HttpBodyEntity'
+1474702681055	Rename type 'Transaction'
+1474702742066	Rename type 'TransactionEntity'
+1474703754494	Delete elements
+1474703912907	Delete elements
+1474704248556	Delete elements
+1474704360639	Delete elements
+1474704584658	Delete element
+1474704608132	Rename type 'SamplePersonApiApplication'
+1474704636981	Delete elements
+1474736963887	Rename type 'MonthSummary'
+1474739598505	Delete elements
+1474739603047	Delete element
+1474741275684	Rename type 'DataLoader'
+1474741292225	Rename type 'DataLoaderImpl'
+1474745093256	Delete elements
+1474751605154	Extract method 'calculateAvergate'
+1474752326056	Delete element
+1474752730576	Delete element

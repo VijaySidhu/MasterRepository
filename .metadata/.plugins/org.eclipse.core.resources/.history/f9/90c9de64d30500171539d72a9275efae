@@ -1,0 +1,17 @@
+package com.google.interview.questions.arrays;
+
+public class RearrangePositiveAndNegative {
+
+	public void reaarange(int[] array) {
+		int pivot = 0;
+		int left = 0;
+		int right = array.length - 1;
+
+		while (right > left) {
+			while (array[left] < 0 && left < right) {
+
+			}
+		}
+	}
+
+}

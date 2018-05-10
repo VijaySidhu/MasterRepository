@@ -1,0 +1,17 @@
+package com.google.interview.questions.core.java;
+
+public class ThreadSafeSingleton {
+
+	private static final ThreadSafeSingleton INSTANCE = new ThreadSafeSingleton();
+
+}
+
+	public static Singleton getInstance() {
+		return INSTANCE;
+	}
+
+	public void show() {
+		System.out.println("Singleon using static initialization in Java");
+}
+
+Read more:http://javarevisited.blogspot.com/2012/12/how-to-create-thread-safe-singleton-in-java-example.html#ixzz4ckt0Kry9

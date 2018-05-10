@@ -1,0 +1,32 @@
+package com.google.interview.questions.arrays;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+/**
+ * Input : arr1[] = {1, 2} arr2[] = {3,
+ * 4} N = 3 Output : 6
+ * 
+ * @author VijaySidhu
+ * 
+ *         Add both Arrays put it into
+ *         TreeMap(Log(n) for get put
+ *         and remove and retrieve nth
+ *         item
+ *
+ */
+public class NthItemSetFormedBySumOfTwoArrays {
+
+	int calSum(int[] arr1, int[] arr2, int size1, int size2;int n) {
+		int sum = 0;
+		Map<Integer, Integer> map = new TreeMap<Integer, Integer>();
+		for (int i = 0; i < size1; i++) {
+			for (int j = 0; j < size2; j++) {
+				map.put(i, arr1[i] + arr2[j]);
+			}
+		}
+		
+		return map.get(n);
+	}
+
+}

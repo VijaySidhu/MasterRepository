@@ -1,0 +1,13 @@
+package com.google.interview.questions.mathproblems;
+/**
+ * Translates to below question
+ * How many integer from 1 to n (inclusively) having odd numbers of divisors?
+ * @author VijaySidhu
+ *
+ */
+public class BulbProblem {
+	
+	public int bulbSwitch(int n) {
+		return (int) Math.sqrt(n);
+	}
+}

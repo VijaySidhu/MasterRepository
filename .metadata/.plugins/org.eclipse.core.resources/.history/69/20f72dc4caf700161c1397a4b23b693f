@@ -1,0 +1,37 @@
+package com.google.interview.questions.trees;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+import com.google.interview.questions.BinaryTreeCreation;
+
+public class BreadthOrLevelOrderTravese {
+
+	void printLevelOrder(TreeNode node) {
+		Queue<TreeNode> queue = new LinkedList<>();
+		if (node != null) {
+			queue.add(node);
+		}
+
+		while (!queue.isEmpty()) {
+
+			TreeNode current = (TreeNode) queue.remove();
+			System.out.println(current.key);
+
+			if (current.left != null) {
+				queue.add(current.left);
+			}
+			if (current.right != null) {
+				queue.add(current.right);
+			}
+
+		}
+
+	}
+
+	public static void main(String[] args) {
+		TreeNode rootNode = new TreeNode(1);
+
+	}
+
+}

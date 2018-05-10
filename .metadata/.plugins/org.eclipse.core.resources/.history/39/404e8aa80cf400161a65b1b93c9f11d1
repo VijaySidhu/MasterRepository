@@ -1,0 +1,15 @@
+package com.google.interview.questions.linkedlist;
+
+public class ReversePairs {
+
+	Node head;
+
+	void pairSwap() {
+		Node temp = head;
+
+		while (temp != null && temp.next != null) {
+
+		}
+	}
+
+}

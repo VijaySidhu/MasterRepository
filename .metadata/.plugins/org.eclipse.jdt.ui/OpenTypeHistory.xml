@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=questions/C:\/Program Files\/Java\/jdk1.8.0_51\/jre\/lib\/rt.jar&lt;java.util(Stack.class[Stack" modifiers="33" timestamp="1437597948639"/>
+<typeInfo handle="=questions/C:\/Program Files\/Java\/jdk1.8.0_51\/jre\/lib\/rt.jar&lt;java.util(Deque.class[Deque" modifiers="1537" timestamp="1437597948639"/>
+<typeInfo handle="=questions/C:\/Program Files\/Java\/jdk1.8.0_51\/jre\/lib\/rt.jar&lt;java.util(HashMap.class[HashMap" modifiers="33" timestamp="1437597948639"/>
+<typeInfo handle="=questions/C:\/Program Files\/Java\/jdk1.8.0_51\/jre\/lib\/rt.jar&lt;java.lang(ThreadLocal.class[ThreadLocal" modifiers="33" timestamp="1437597948639"/>
+<typeInfo handle="=questions/C:\/Program Files\/Java\/jdk1.8.0_51\/jre\/lib\/rt.jar&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1437597948639"/>
+<typeInfo handle="=questions/C:\/Users\/VijaySidhu\/.m2\/repository\/org\/eclipse\/jdt\/core\/3.1.1\/core-3.1.1.jar&lt;org.eclipse.jdt.internal.core.util(Util$Comparable.class[Comparable" modifiers="1545" timestamp="1490130422177"/>
+<typeInfo handle="=questions/C:\/Program Files\/Java\/jdk1.8.0_51\/jre\/lib\/rt.jar&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1437597948639"/>
+<typeInfo handle="=questions/C:\/Program Files\/Java\/jdk1.8.0_51\/jre\/lib\/rt.jar&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1437597948639"/>
+<typeInfo handle="=questions/C:\/Program Files\/Java\/jdk1.8.0_51\/jre\/lib\/rt.jar&lt;java.lang(String.class[String" modifiers="49" timestamp="1437597948639"/>
+<typeInfo handle="=questions/C:\/Users\/VijaySidhu\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/8.5.4\/tomcat-embed-core-8.5.4.jar&lt;org.apache.tomcat.util.http.fileupload(FileUtils.class[FileUtils" modifiers="33" timestamp="1488350382610"/>
+<typeInfo handle="=questions/src\/main\/java&lt;com.google.interview.questions{RedBlackNode.java[RedBlackNode" modifiers="0" timestamp="1468257573957"/>
+<typeInfo handle="=questions/src\/main\/java&lt;com.google.interview.questions{RedBlackTree.java[RedBlackTree" modifiers="1" timestamp="1468257619553"/>
+<typeInfo handle="=questions/C:\/Users\/VijaySidhu\/.m2\/repository\/org\/scala-lang\/scala-library\/2.11.0\/scala-library-2.11.0.jar&lt;scala.collection.immutable(RedBlackTree.class[RedBlackTree" modifiers="49" timestamp="1489184830134"/>
+<typeInfo handle="=questions/src\/main\/java&lt;com.google.interview.questions.problemsolving{StockBuySell.java[Interval" modifiers="0" timestamp="1490814209698"/>
+</typeInfoHistroy>

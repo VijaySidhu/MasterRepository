@@ -1,0 +1,33 @@
+package com.google.interview.questions.graphs;
+
+import java.util.LinkedList;
+
+public class AllPathsBetweenTwoNodes {
+	// BFS
+	public static boolean isDirectRoute(Graph graph, Node source, Node destination) {
+		LinkedList<Node> queue = new LinkedList<Node>();
+		if (source != null) {
+			source.setState(State.Visiting);
+			queue.add(source);
+		}
+		Node queueElement;
+		while (!queue.isEmpty()) {
+			queueElement = (Node) queue.removeFirst();
+			if (null != queueElement) {
+				for (Node node : graph.getAdjList().get(queueElement)) {
+					if (State.Unvisited == node.getState()) {
+						if (node == destination) {
+							return true;
+						} else {
+							node.setState(State.Visiting);
+							queue.add(node);
+						}
+					}
+				}
+			}
+			queueElement.setState(State.Visited);
+		}
+		return false;
+	}
+
+}

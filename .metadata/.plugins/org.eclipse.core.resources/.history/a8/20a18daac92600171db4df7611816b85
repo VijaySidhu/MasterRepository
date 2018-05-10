@@ -1,0 +1,48 @@
+package com.google.interview.questions.graphs;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * 1. Adjacency Matrix(AM) 2. Adjacency
+ * list(AL) Basic operations : Add Edge,
+ * AM:: O(1) AL::O(log(n)); delete Edge,
+ * AM:: O(1) AL::O(log(n)); Is there
+ * edge between i and j AM:: O(1)
+ * AL::O(log(n)); find successor of
+ * given vertex AM :: O(n) AL::O(k));
+ * find path between vertices AM ::
+ * O(n*n) (n+m)
+ * 
+ * @author VijaySidhu
+ */
+public class GraphRepresentation {
+
+	Map<Node, List<Node>> adjList = new HashMap<Node, List<Node>>();
+
+	List<Node> nodes = new ArrayList<Node>();
+
+	public void addNode(Node node) {
+		nodes.add(node);
+	}
+
+}
+
+class Node {
+
+	int element;
+	State state;
+
+	public Node(int element, State state) {
+		this.element = element;
+		this.state = state;
+
+	}
+}
+
+enum State {
+	Visted, Univisted, Visiting;
+
+}

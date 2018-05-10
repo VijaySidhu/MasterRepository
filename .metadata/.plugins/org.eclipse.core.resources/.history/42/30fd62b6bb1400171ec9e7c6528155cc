@@ -1,0 +1,21 @@
+package com.google.interview.questions.core.java;
+import java.util.*;
+import java.lang.*;
+public class ThreadLocal {
+
+}
+
+class PerThreadFormatter {
+	private static final ThreadLocal<SimpleDateFormat> dateFormatHolder = new ThreadLocal<SimpleDateFormat>() {
+
+        /*
+         * initialValue() is called
+         */
+        @Override
+        protected SimpleDateFormat initialValue() {
+            System.out.println("Creating SimpleDateFormat for Thread : " + Thread.currentThread().getName());
+            return new SimpleDateFormat("dd/MM/yyyy");
+        }
+    };
+
+}

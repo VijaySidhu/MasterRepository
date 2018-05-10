@@ -1,0 +1,14 @@
+package com.google.interview.questions.core.java;
+
+public class WaitNotifyProducerConsumer {
+
+}
+
+class Message {
+	String message;
+
+	public String Message(String message) {
+		this.message = message;
+
+	}
+}

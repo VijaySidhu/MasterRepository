@@ -1,0 +1,46 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * Quick Sort
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class EvenOddSortandPlacement {
+
+	public static void twoWaySor(int[] array, int n) {
+
+		int l = 0;
+		int r = n - 1;
+		// Odd number counter
+		int k = 0;
+
+		while (l < r) {
+			// find first odd number from left side
+			while (array[l] % 2 != 0) {
+				l++;
+				k++;
+			}
+			// find first even number from right side
+			while (array[r] % 2 == 0) {
+				r--;
+			}
+
+			// Swap numbers
+			if (l < r) {
+				int temp = array[l];
+				array[l] = array[r];
+				array[r] = temp;
+			}
+
+		}
+
+	}
+
+	public static void main(String[] args) {
+		int arr[] = { 1, 3, 2, 7, 5, 4 };
+		int n = arr.length;
+		twoWaySor(array, n);
+	}
+
+}

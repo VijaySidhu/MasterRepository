@@ -1,0 +1,14 @@
+package com.google.interview.questions.algorithms;
+
+public class Practice {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public static String infixToPost(String input){
+		
+		
+	}
+
+}

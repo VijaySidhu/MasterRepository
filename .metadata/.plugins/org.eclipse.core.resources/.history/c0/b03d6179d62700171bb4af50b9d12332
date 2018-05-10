@@ -1,0 +1,74 @@
+package com.google.interview.questions.graphs;
+
+/**
+ * O(E + VLogV) 1. Maintain two sets one
+ * set will have veritices included in
+ * Shortest path tree second set will
+ * have vertices not included in set
+ * 
+ * At every step we find vertex which is
+ * in other set and has minimum distance
+ * from source
+ * 
+ * 1) Create a set sptSet (shortest path
+ * tree set) that keeps track of
+ * vertices included in shortest path
+ * tree, i.e., whose minimum distance
+ * from source is calculated and
+ * finalized. Initially, this set is
+ * empty. 2) Assign a distance value to
+ * all vertices in the input graph.
+ * Initialize all distance values as
+ * INFINITE. Assign distance value as 0
+ * for the source vertex so that it is
+ * picked first. 3) While sptSet doesn’t
+ * include all vertices ….a) Pick a
+ * vertex u which is not there in
+ * sptSetand has minimum distance value.
+ * ….b) Include u to sptSet. …. c)
+ * Update distance value of all adjacent
+ * vertices of u. To update the distance
+ * values, iterate through all adjacent
+ * vertices. For every adjacent vertex
+ * v, if sum of distance value of u
+ * (from source) and weight of edge u-v,
+ * is less than the distance value of v,
+ * then update the distance value of v.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class ShortestPathDijkatsra {
+
+	int V = 9;
+
+	// Dijkatsra
+	void dijKstra(int graph[][], int src) {
+		// Output array that will hold shortest distance from src to i
+		int dist[] = new int[V];
+		// Special Set sptSet[i] will hold true if vertex is included in shotest path tree or shortest distance is finalized
+		Boolean sptSet[] = new Boolean[V];
+
+		// Initialize all distance to finite value
+		for (int i = 0; i < V; i++) {
+			dist[i] = Integer.MAX_VALUE;
+			sptSet[i] = false;
+		}
+		// Initialize Src vertex with 0
+		dist[src] = 0;
+
+		// Find Shortest Path for all vertices
+		for (int v = 0; v < V; v++) {
+			// Pick the minimum distance vertex from set of vertices not yet processed
+			int u = minimum(dist, sptSet);
+
+		}
+
+	}
+
+	private int minimum(int[] dist, Boolean[] sptSet) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

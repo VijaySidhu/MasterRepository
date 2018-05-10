@@ -1,0 +1,24 @@
+package com.google.interview.questions.trees;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class LevelOrderLineByLine {
+
+	public void levelOrderQueue(Node root) {
+		Queue q = new LinkedList<>();
+		int levelNodes = 0;
+		if (root == null)
+			return;
+		q.add(root);
+
+		while (!q.isEmpty()) {
+			levelNodes = q.size();
+			while (levelNodes > 0) {
+				TreeNode node = (TreeNode) q.remove();
+				System.out.println(" " + node.key);
+			}
+		}
+	}
+
+}

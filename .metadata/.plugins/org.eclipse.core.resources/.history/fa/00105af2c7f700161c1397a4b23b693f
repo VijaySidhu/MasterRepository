@@ -1,0 +1,15 @@
+package com.google.interview.questions.trees;
+
+public class PostOrderTravesal {
+
+	void printPostOrder(TreeNode node) {
+		if (node == null) {
+			return;
+		}
+
+		printPostOrder(node.left);
+		printPostOrder(node.right);
+		System.out.println(node.key);
+	}
+
+}

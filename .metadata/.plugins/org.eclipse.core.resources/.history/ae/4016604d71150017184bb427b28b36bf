@@ -1,0 +1,23 @@
+package com.google.interview.questions.core.java;
+
+class SuperExample {
+
+	public SuperExample() {
+		System.out.println("In Super class....");
+	}
+
+	public void test() {
+		System.out.println("super class test method");
+	}
+}
+
+public class SuperKeyWord extends SuperExample {
+
+	public SuperKeyWord() {
+		super();
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

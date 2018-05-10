@@ -1,0 +1,20 @@
+package com.google.interview.questions.trees;
+
+/**
+ * It can be done given travesal order. It can be done if given order in inOrder
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class ConstructBinaryTree {
+
+	public static void main(String[] args) {
+		
+		char in[] = new char[] { 'D', 'B', 'E', 'A', 'F', 'C' };
+		
+		char pre[] = new char[]{'A', 'B', 'D', 'E', 'C', 'F'};
+		
+		
+	}
+
+}

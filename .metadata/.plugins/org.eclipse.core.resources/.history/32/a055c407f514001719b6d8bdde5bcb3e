@@ -1,0 +1,7 @@
+package com.google.interview.questions.core.java;
+
+import java.util.Comparator;
+
+public class GradeComparator implements Comparator<Student> {
+
+}

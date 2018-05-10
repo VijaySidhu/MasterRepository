@@ -1,0 +1,11 @@
+package com.google.interview.questions.graphs;
+
+/**
+ * Prims Algorithm
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class MinimumSpanningTree {
+
+}

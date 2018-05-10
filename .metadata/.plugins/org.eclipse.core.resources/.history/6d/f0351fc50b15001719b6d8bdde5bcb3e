@@ -1,0 +1,9 @@
+package com.google.interview.questions.core.java;
+/**
+ * The method argument list in overridden and overriding methods must be exactly same 
+ * @author VijaySidhu
+ *
+ */
+public class OverridingExample {
+
+}

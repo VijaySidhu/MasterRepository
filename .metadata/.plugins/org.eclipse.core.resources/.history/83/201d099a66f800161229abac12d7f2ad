@@ -1,0 +1,51 @@
+package com.google.interview.questions.trees;
+
+public class IdenticalTrees {
+
+	TreeNode root1;
+
+	TreeNode root2;
+
+	boolean isIdenticalTrees(TreeNode root1, TreeNode root2) {
+		if (root1 == null && root2 == null) {
+			return true;
+		}
+
+		if (root1 != null && root2 != null) {
+			return (root1.key == root2.key && isIdenticalTrees(root1.left, root2.right));
+
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+
+		TreeNode rootNodeTree2 = new TreeNode(1);
+		TreeNode rootNode1 = new TreeNode(2);
+		TreeNode rootNode2 = new TreeNode(3);
+		TreeNode rootNode3 = new TreeNode(4);
+		TreeNode rootNode4 = new TreeNode(5);
+		TreeNode rootNode5 = new TreeNode(6);
+		rootNode.left = rootNode1;
+		rootNode.right = rootNode2;
+		rootNode1.left = rootNode3;
+		rootNode1.right = rootNode4;
+		rootNode2.left = rootNode5;
+		rootNode2.right = rootNode5;
+
+		TreeNode rootNodeTree2 = new TreeNode(1);
+		TreeNode rootNode11 = new TreeNode(2);
+		TreeNode rootNode22 = new TreeNode(3);
+		TreeNode rootNode33 = new TreeNode(4);
+		TreeNode rootNode44 = new TreeNode(5);
+		TreeNode rootNode55 = new TreeNode(6);
+		rootNodeTree2.left = rootNode11;
+		rootNodeTree2.right = rootNode22;
+		rootNode11.left = rootNode33;
+		rootNode11.right = rootNode44;
+		rootNode22.left = rootNode55;
+		rootNode22.right = rootNode55;
+
+	}
+
+}

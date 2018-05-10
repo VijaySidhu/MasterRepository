@@ -1,0 +1,20 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * An Efficient approach is to think
+ * greedily. If we visualize the problem
+ * then we will get to know that largest
+ * permutation can only be obtained if
+ * it starts with n and continues with
+ * n-1, n-2,…. So we just need to put
+ * the 1st, 2nd, 3rd, …, kth largest
+ * element to their respective position.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class KSwapPermutation {
+	
+	
+
+}

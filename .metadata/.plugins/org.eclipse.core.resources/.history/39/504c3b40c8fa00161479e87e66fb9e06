@@ -1,0 +1,40 @@
+package com.google.interview.questions.trees;
+
+/**
+ * The diameter of a tree (sometimes called the width) is the number of nodes on
+ * the longest path between two leaves in the tree
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class DiameterOfBinaryTree {
+
+	Height lt = new Height();
+
+	Height rt = new Height();
+
+	int diameter(TreeNode root, Height ht) {
+		if (root == null) {
+			return 0;
+		}
+		lt.h++;
+		rt.h++;
+		int lDiameter = diameter(root.left, lt);
+		int rDiameter = diameter(root.right, rt);
+
+		/*
+		 * Height of current node is max of heights of left and right subtrees
+		 * plus 1
+		 */
+		ht.h = Math.max(lDiameter, rDiameter) + 1;
+		return Math.max(lt.h + rt.h + 1, Math.max(lDiameter, rDiameter));
+	}
+
+	public static void main(String[] args) {
+		TreeNode root = new TreeNode(1);
+		DiameterOfBinaryTree bt = new DiameterOfBinaryTree();
+		Height ht = new Height();
+		System.out.println(bt.diameter(rootNode, ht));
+	}
+
+}

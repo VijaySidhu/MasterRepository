@@ -1,0 +1,18 @@
+package com.google.interview.questions.string;
+
+public class RunLengthEncodingOrCompressor {
+
+	public static String encode(String source) {
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < source.length(); i++) {
+			int runLength = 1;
+			while (i + 1 < source.length() && source.charAt(i) == source.charAt(i + 1)) {
+				runLength++;
+				i++;
+			}
+			sb.append(runLength);
+		}
+		return null;
+	}
+
+}

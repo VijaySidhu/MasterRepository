@@ -1,0 +1,24 @@
+package com.google.interview.questions.trees;
+
+public class PostOrderTravesal {
+
+	void printPostOrder(TreeNode node) {
+		if (node == null) {
+			return;
+		}
+		printPostOrder(node.left);
+		printPostOrder(node.right);
+		System.out.println(node.key);
+	}
+
+	void printInOrder(TreeNode node) {
+		if (node == null) {
+			return;
+		}
+
+		printInOrder(node.left);
+		System.out.println(node.key + " ");
+		printInOrder(node.right);
+	}
+
+}

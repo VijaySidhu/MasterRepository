@@ -1,0 +1,20 @@
+package com.google.interview.questions.graphs;
+
+import java.util.Set;
+import java.util.Stack;
+
+import com.sun.corba.se.impl.orbutil.graph.Graph;
+
+import scala.collection.immutable.HashSet;
+
+public class AllPaths {
+
+	// current path
+	private Stack<String> path = new Stack<String>();
+	// Set of vertices on path
+	private Set<String> onPath = new HashSet<String>();
+
+	public AllPaths(Graph G, String s, String t) {
+		enumerate(G, s, t);
+	}
+}

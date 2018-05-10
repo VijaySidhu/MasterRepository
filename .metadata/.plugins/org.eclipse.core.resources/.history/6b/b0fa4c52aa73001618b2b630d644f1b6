@@ -1,0 +1,10 @@
+package com.google.interview.questions.mathproblems;
+
+
+class Cordinate{
+    int x;
+    int y;
+}
+public class FourPointsFormSquare {
+
+}

@@ -1,0 +1,36 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * 1) Initialize both first and second
+ * smallest as INT_MAX first = second =
+ * INT_MAX 2) Loop through all the
+ * elements. a) If the current element
+ * is smaller than first, then update
+ * first and second. b) Else if the
+ * current element is smaller than
+ * second then update second
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class SmallestAndSecondSmallest {
+
+	static void twoSmallest(int[] array) {
+
+		int first;
+		int second;
+		int length = array.length;
+
+		if (length < 2) {
+			System.out.println("Invalid Input");
+		}
+
+		first = Integer.MAX_VALUE;
+		second = Integer.MAX_VALUE;
+		for (int i = 0; i < length; i++) {
+
+		}
+
+	}
+
+}

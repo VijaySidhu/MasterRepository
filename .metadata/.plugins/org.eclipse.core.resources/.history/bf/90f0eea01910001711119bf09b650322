@@ -1,0 +1,21 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * Input : arr1[] = {1, 2} arr2[] = {3,
+ * 4} N = 3 Output : 6
+ * 
+ * @author VijaySidhu
+ * 
+ *         Add both Arrays put it into
+ *         TreeMap(Log(n) for get put
+ *         and remove and retrieve nth
+ *         item
+ *
+ */
+public class NthItemSetFormedBySumOfTwoArrays {
+
+	int calSum(int[] arr1; int[] arr2; int size1;int size2){
+		
+	}
+
+}

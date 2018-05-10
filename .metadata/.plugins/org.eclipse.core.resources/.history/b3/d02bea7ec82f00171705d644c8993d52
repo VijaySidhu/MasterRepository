@@ -1,0 +1,47 @@
+package com.google.interview.questions.trees;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+import com.google.interview.questions.linkedlist.Node;
+
+/**
+ * Create Empty Queue Add first Node of
+ * linked list to queue Loop until we
+ * reach at end of linked list 1. Dqueue
+ * first node of queue 2. Traverse 2
+ * nodes of list add it to queue
+ * 
+ * @author VijaySidhu
+ *
+ */
+
+public class LinkedListToBinaryTree {
+
+	public TreeNode convertListToBinTree(Node head) {
+		if (head == null) {
+			return null;
+		}
+		// Create first Tree Node with first Element of LinkedList
+		TreeNode node = new TreeNode(head.getData());
+		// Add Tree Node to Queue
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+		queue.add(node);
+		// Move head to next element
+		head = head.getNext();
+		// Loop until last element of linked list
+		while (head != null) {
+			TreeNode parent = queue.poll();
+			// Take next two nodes from linked list and set as left and right child
+			TreeNode leftChild = new TreeNode(head.getData());
+			queue.add(leftChild);
+			head = head.getNext();
+			if (head != null) {
+				TreeNode rightChild = new TreeNode(head.getData());
+			}
+
+		}
+		return node;
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * Efficient solution is based on the
+ * fact that given array is already
+ * sorted. We do following two steps.
+ * Divide the array into two part
+ * “Negative and positive “. Use merge
+ * function to merge two sorted arrays
+ * into a single sorted array.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class SortSquaresPositiveNeg {
+
+	
+}

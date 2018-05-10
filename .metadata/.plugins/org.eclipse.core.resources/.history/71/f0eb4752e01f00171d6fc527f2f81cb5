@@ -1,0 +1,28 @@
+package com.google.interview.questions.graphs;
+
+import java.util.Set;
+import java.util.Stack;
+
+import com.sun.corba.se.impl.orbutil.graph.Graph;
+
+import scala.collection.immutable.HashSet;
+
+public class AllPaths {
+
+	static int dim = 5; // dim is number of nodes in graph
+	 
+    //color is used to mark if the node is visited or not
+    static boolean[] color = new boolean[dim + 1];
+     
+    //graph is given in 2-D matrix form
+    static int[][] graph = new int[10][10];
+     
+    // this list will store nodes on the path from source to destination
+    static ArrayList<Integer> list = new ArrayList<Integer>();
+     
+    // this is the size of "list" declared above
+    // size is used to remember index of the node in the list to be removed
+    // when  the node is marked unvisited
+    static int size;
+     
+}

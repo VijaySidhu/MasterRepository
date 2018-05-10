@@ -1,0 +1,10 @@
+package com.google.interview.questions.core.java;
+/**
+ * This pattern introduces loose coupling between classes 
+ * @author VijaySidhu
+ *
+ */
+public class FactoryPattern {
+
+	
+}

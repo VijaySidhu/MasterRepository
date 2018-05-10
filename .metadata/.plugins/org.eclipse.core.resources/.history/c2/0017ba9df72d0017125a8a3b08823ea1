@@ -1,0 +1,12 @@
+package com.google.interview.questions.algorithms;
+
+// find fourth bit
+public class FourthBit {
+
+	public static void main(String a[]) {
+		Integer i = new Integer(32);
+		String binary = Integer.toBinaryString(i);
+		System.out.println("Binary value: " + binary);
+		System.out.println(i & ((1 << 4) - 1));
+	}
+}

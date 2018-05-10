@@ -1,0 +1,8 @@
+package com.google.interview.design;
+
+public class VendingMachineFactory {
+	public static VendingMachine createVendingMachine() {
+		return new VendingMachineImpl();
+	}
+
+}

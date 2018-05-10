@@ -1,0 +1,49 @@
+package com.google.interview.questions.linkedlist;
+
+public class Practice {
+
+	// Nth TO last
+
+	void printNthFromLast(Node head, int n) {
+		Node p1 = head;
+		Node p2 = head;
+
+		while (n > 0 && p2.next != null) {
+			if (p2 == null) {
+				return;
+			}
+			p2 = p2.next;
+			n--;
+		}
+		// Not After above loop p2 is at n-1, now move both pointers until p2 reaches end
+		while (p2.next == null) {
+			p1 = p1.next;
+			p2 = p2.next;
+		}
+		System.out.println(p1.data);
+
+	}
+
+	// Delete Alternate
+	
+	void deleteAlt(Node node){
+		if(node == null){
+			return;
+		}
+		Node node = node.next.next;
+		
+	}
+
+	// Reverse whole
+
+	// Reverse Pairs
+
+	// Find Cycle
+
+	// Find Middle
+
+	// Sorted Insertion
+
+	// Random Number picker
+
+}

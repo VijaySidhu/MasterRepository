@@ -1,0 +1,66 @@
+package com.techscreenmaster.account.model;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "account")
+public class AccountEntity {
+
+	@Column(name = "account_id")
+	private int accountId;
+	
+	@Column(name = "company_name")
+	private String companyName;
+	
+	private List<LoginEntity> logins;
+
+	public AccountEntity() {
+
+	}
+
+	public AccountEntity(String companyName) {
+		this.companyName = companyName;
+	}
+
+	@Id
+	
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	public int getAccountId() {
+		return accountId;
+	}
+
+	public void setAccountId(int id) {
+		this.accountId = id;
+	}
+
+	
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	@Column(name = "company_name")
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+	@OneToMany(mappedBy = "loginId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	public List<LoginEntity> getLogins() {
+		return logins;
+	}
+
+	//@OneToMany(mappedBy = "loginId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	public void setLogins(List<LoginEntity> logins) {
+		this.logins = logins;
+	}
+
+}

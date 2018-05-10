@@ -1,0 +1,14 @@
+package com.techscreenmaster.account.service;
+
+import org.springframework.stereotype.Service;
+
+import com.techscreenmaster.account.model.CustomerEntity;
+@Service
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public void saveCustomer(CustomerEntity customerEntity) {
+		System.out.println("Hitting Service");
+	}
+
+}

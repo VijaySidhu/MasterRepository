@@ -1,0 +1,15 @@
+package com.google.interview.questions.stacks;
+
+/**
+ * O(n)
+ * Here we find next greater
+ * element and after finding next
+ * greater, if we find a smaller
+ * element, then return false.
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class ArrayPreOrderTraversal {
+
+}

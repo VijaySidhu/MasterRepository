@@ -1,0 +1,6 @@
+package com.google.interview.questions.parkinglot;
+
+public abstract class Slot {
+	private boolean isOccupied;
+	private int slotNumber;
+}

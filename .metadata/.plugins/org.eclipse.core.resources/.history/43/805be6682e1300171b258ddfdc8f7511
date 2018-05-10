@@ -1,0 +1,17 @@
+package com.google.interview.questions.arrays;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+
+/**
+ * O(Nlog k) N is the total number of
+ * integers. k is the number of arrays.
+ * Heap Priority Queue
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class MergeKSortedArrays {
+	
+}

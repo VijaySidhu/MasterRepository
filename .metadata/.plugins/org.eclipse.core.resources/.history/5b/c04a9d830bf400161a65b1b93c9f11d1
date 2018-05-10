@@ -1,0 +1,16 @@
+package com.google.interview.questions.linkedlist;
+
+public class RemoveDuplicatesSortedList {
+
+	Node head;
+
+	void removeDuplicate() {
+		Node current = head;
+		Node nextOfNext;
+
+		if (head == null) {
+			return;
+		}
+
+	}
+}

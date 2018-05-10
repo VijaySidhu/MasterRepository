@@ -1,0 +1,6 @@
+package com.google.interview.questions.core.java;
+
+public class WaitNotifyProducerConsumer {
+
+}
+class Message

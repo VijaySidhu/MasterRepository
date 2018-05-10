@@ -1,0 +1,15 @@
+package com.google.interview.questions.graphs;
+
+import java.util.Stack;
+
+public class AllPaths {
+
+	// current path
+	private Stack<String> path = new Stack<String>();
+	// Set of vertices on path
+	private SET<String> onPath = new SET<String>();
+
+	public AllPaths(Graph G, String s, String t) {
+		enumerate(G, s, t);
+	}
+}

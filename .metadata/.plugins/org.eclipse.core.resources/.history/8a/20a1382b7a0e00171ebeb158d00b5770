@@ -1,0 +1,26 @@
+package com.google.interview.questions.arrays;
+
+public class RangeIncrementalMax {
+
+	int findMax(int n, int a[], int b[], int k[], int m) {
+		int[] arr = new int[n];
+		// start performing m operations
+		for (int i = 0; i < m; i++) {
+			// Store lower and upper index i.e. range
+			int lowerbound = a[i];
+			int upperbound = b[i];
+
+			// Add 'k[i]' value at this operation to
+			// whole range
+			for (int j = lowerbound; j <= upperbound; j++)
+				arr[j] += k[i];
+		}
+		// Find maximum value after all operations and
+		// return
+		int res = Integer.MIN_VALUE;
+		for (int i = 0; i < n; i++)
+			res = Math.max(res, arr[i]);
+		return res;
+	}
+
+}

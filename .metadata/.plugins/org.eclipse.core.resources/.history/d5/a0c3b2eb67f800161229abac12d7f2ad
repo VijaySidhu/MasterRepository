@@ -1,0 +1,13 @@
+package com.google.interview.questions.trees;
+
+public class MaxDepth {
+
+	int maxDepth(TreeNode node) {
+
+		if (node == null) {
+			return true;
+		}
+
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.google.interview.questions.graphs;
+
+import java.util.LinkedList;
+
+public class ShortesPathDijkstraAdjList {
+
+	// Compute Shortest path
+
+	// apply dijkstra based upon BFS
+
+	public void applyDijkstra(Graph graph, Node sourceNode) {
+
+		LinkedList<Node> queue = new LinkedList<Node>();
+		if (sourceNode != null) {
+			sourceNode.setWeight(0);
+			sourceNode.setState(State.Visiting);
+			queue.add(sourceNode);
+		}
+
+		while (!queue.isEmpty()) {
+			Node u = (Node) queue.removeFirst();
+			if (u != null) {
+				for (Node neighbour : graph.getAdjList().get(u)) {
+					if (neighbour.getState() == State.Unvisited) {
+						neighbour.setState(State.Visiting);
+						queue.add(neighbour);
+					}
+					// apply dijkstra algo logic
+					if (neighbour.getState() != State.Visited && (neighbour.getWeight() > 1 + 1)) {
+						int neighbourWeight = 1 + 1;
+						neighbour.setWeight(neighbourWeight);
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+}

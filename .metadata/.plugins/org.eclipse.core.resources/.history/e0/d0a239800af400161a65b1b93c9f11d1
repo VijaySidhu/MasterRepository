@@ -1,0 +1,94 @@
+package com.google.interview.questions.linkedlist;
+
+/**
+ * This method takes O(n) time and O(1) extra space. 1) Get the middle of the
+ * linked list. 2) Reverse the second half of the linked list. 3) Check if the
+ * first half and second half are identical. 4) Construct the original linked
+ * list by reversing the second half again and attaching it back to the first
+ * half
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class PalindromeLinkedList {
+	Node head;
+	Node slowPointer;
+	Node fastPointer;
+	Node secondHalf;
+
+	boolean isPalindrome(Node head) {
+		slowPointer = head;
+		fastPointer = head;
+		Node prevSlowPointer = head;
+		Node midNode = null; // TO handle Odd Size
+		if (head != null && head.next != null) {
+			while (fastPointer != null && fastPointer.next != null) {
+				fastPointer = fastPointer.next.next;
+				prevSlowPointer = slowPointer;
+				slowPointer = slowPointer.next;
+			}
+			// fast pointer would become null in case of even nodes in case of odd nodes save middle node some where else
+			if (fastPointer != null) {
+				midNode = slowPointer;
+				slowPointer = slowPointer.next;
+			}
+			// Reverse Second Half
+			secondHalf = slowPointer;
+			prevSlowPointer.next = null;
+			// Reverse Second Half
+			reverse();
+
+			if (midNode != null) {
+				// If there was a mid node (odd size case) which                                                         
+				// was not part of either first half or second half.
+				prevSlowPointer.next = midNode;
+				midNode.next = secondHalf;
+			} else
+				prevSlowPointer.next = secondHalf;
+		}
+
+		return false;
+
+	}
+
+	/*
+	 * Function to reverse the linked list Note that this function may change
+	 * the head
+	 */
+	void reverse() {
+		Node prev = null;
+		Node current = secondHalf;
+		Node next;
+		while (current != null) {
+			next = current.next;
+			current.next = prev;
+			prev = current;
+			current = next;
+		}
+		secondHalf = prev;
+	}
+
+	/* Function to check if two input lists have same data */
+	boolean compareLists(Node head1, Node head2) {
+		Node temp1 = head1;
+		Node temp2 = head2;
+
+		while (temp1 != null && temp2 != null) {
+			if (temp1.data == temp2.data) {
+				temp1 = temp1.next;
+				temp2 = temp2.next;
+			} else
+				return false;
+		}
+
+		/* Both are empty reurn 1 */
+		if (temp1 == null && temp2 == null)
+			return true;
+
+		/*
+		 * Will reach here when one is NULL and other is not
+		 */
+		return false;
+	}
+
+}

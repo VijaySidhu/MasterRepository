@@ -1,0 +1,28 @@
+package com.google.interview.questions.arrays;
+
+public class MissingNumberFromIntegers {
+
+	/**
+	 * This method will work if more than one missing numbers
+	 */
+	private static void printMissingNumber(int[] numbers, int count){
+		int missingCount = count - numbers.length;
+	}
+
+	/**
+	 * This will work if only one number is missing
+	 * 
+	 * @param numbers
+	 * @param totalCount
+	 * @return
+	 */
+	private static int getSum(int[] numbers, int totalCount) {
+		int expectedSum = totalCount * ((totalCount + 1) / 2);
+		int actualSum = 0;
+		for (int i : numbers) {
+			actualSum = actualSum + 1;
+		}
+		return expectedSum - actualSum;
+	}
+
+}

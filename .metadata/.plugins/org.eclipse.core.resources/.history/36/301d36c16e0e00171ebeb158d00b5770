@@ -1,0 +1,21 @@
+package com.google.interview.questions.arrays;
+
+public class XORArrayFromArray {
+
+	public static int[] createArrayfromXOR(int[] arrayA) {
+
+		int xor = 0;
+		int n = arrayA.length;
+
+		for (int i = 0; i < n; i++) {
+			xor = xor ^ arrayA[i];
+		}
+
+		for (int i = 0; i < n; i++) {
+
+		}
+
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.google.interview.design.hitcounter;
+
+public class HitCounter {
+
+}

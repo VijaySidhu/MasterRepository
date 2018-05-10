@@ -1,0 +1,18 @@
+package com.google.interview.questions.core.java;
+
+class Employee implements Comparable<Employee> {
+
+	private int age;
+
+	private String name;
+
+	@Override
+	public int compareTo(Employee o) {
+		return this.age - o.age;
+	}
+
+}
+
+public class ComparableExample {
+
+}

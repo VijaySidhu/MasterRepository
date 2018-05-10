@@ -1,0 +1,17 @@
+package com.google.interview.questions.core.java;
+
+/**
+ * We can convert a Java object to an
+ * Stream that is called Serialization.
+ * Once an object is converted to
+ * Stream, it can be saved to file or
+ * send over the network or used in
+ * socket connections.
+ * The object should implement Serializable interface 
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class SerializartionExample {
+
+}

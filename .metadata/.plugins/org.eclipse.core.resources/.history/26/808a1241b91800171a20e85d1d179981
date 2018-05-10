@@ -1,0 +1,14 @@
+package com.google.interview.questions.problemsolving;
+
+public class MinCostPath {
+	/*
+	 * A utility function that returns
+	 * minimum of 3 integers
+	 */
+	private static int min(int x, int y, int z) {
+		if (x < y)
+			return (x < z) ? x : z;
+		else
+			return (y < z) ? y : z;
+	}
+}

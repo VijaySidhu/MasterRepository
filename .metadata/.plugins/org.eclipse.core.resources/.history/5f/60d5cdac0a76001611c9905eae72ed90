@@ -1,0 +1,36 @@
+package com.google.interview.questions.linkedlist;
+
+class NodeDel {
+	int data;
+	NodeDel next;
+
+	public NodeDel(int data) {
+		this.data = data;
+	}
+}
+
+public class DeleteNode {
+	public static void main(String[] args) {
+		DeleteNode del = new DeleteNode();
+		NodeDel node1 = new NodeDel(1);
+		NodeDel node2 = new NodeDel(2);
+		NodeDel node3 = new NodeDel(3);
+		node1.next = node2;
+		node2.next = node3;
+		NodeDel head = del.delete(node1, 1);
+		while (head != null) {
+			System.out.println(head.data);
+			head = head.next;
+		}
+
+	}
+
+	public NodeDel delete(NodeDel head, int pos) {
+		if (pos == 0) {
+			return head.next;
+		}
+		head.next = delete(head.next, pos + 1);
+		return head;
+	}
+
+}

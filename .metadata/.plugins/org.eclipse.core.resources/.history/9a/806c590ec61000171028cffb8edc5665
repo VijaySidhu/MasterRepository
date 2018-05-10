@@ -1,0 +1,30 @@
+package com.google.interview.questions.arrays;
+
+/**
+ * Quick Sort
+ * 
+ * @author VijaySidhu
+ *
+ */
+public class EvenOddSortandPlacement {
+
+	public void twoWaySor(int[] array, int n) {
+
+		int l = 0;
+		int r = n - 1;
+		// Odd number counter
+		int k = 0;
+
+		while (l < r) {
+			
+			
+
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

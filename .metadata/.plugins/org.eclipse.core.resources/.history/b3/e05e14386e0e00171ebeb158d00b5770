@@ -1,0 +1,9 @@
+package com.google.interview.questions.arrays;
+
+public class XORArrayFromArray {
+
+	public static int[] createArrayfromXOR(int[] arrayA) {
+		return null;
+	}
+
+}

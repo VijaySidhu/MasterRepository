@@ -1,0 +1,18 @@
+package com.google.interview.questions.string;
+
+import java.util.Arrays;
+
+public class SentenceCreation {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static boolean sentenceCreation(String text, String pattern) {
+		Arrays.asList(text.split(" "));
+		Arrays.asList(pattern.split(" "));
+
+		return false;
+	}
+
+}
